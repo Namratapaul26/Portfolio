@@ -2,37 +2,53 @@
 
 /* --- PREMIUM SAKURA PINK & FROSTED CRYSTAL DESIGN SYSTEM --- */
 :root {
-  --bg-color: #FCE7F3; /* Delicate sakura blossom pink */
-  --bg-gradient: linear-gradient(135deg, #FCE7F3 0%, #FFE4E6 100%); /* Gorgeous silk pink gradient */
-  --bg-secondary: #FCE8F2; /* Secondary soft pink cream */
-  
-  --card-bg: rgba(255, 255, 255, 0.72); /* Translucent frosted crystal-white glass */
-  --card-bg-hover: rgba(255, 255, 255, 0.88); /* Saturated white glass hover state */
-  
-  --border-color: rgba(255, 255, 255, 0.5); /* Hairline crystal-white border */
-  --border-color-hover: rgba(236, 72, 153, 0.35); /* Active rose-gold outline border */
-  
+  --bg-color: #FCE7F3;
+  /* Delicate sakura blossom pink */
+  --bg-gradient: linear-gradient(135deg, #FCE7F3 0%, #FFE4E6 100%);
+  /* Gorgeous silk pink gradient */
+  --bg-secondary: #FCE8F2;
+  /* Secondary soft pink cream */
+
+  --card-bg: rgba(255, 255, 255, 0.72);
+  /* Translucent frosted crystal-white glass */
+  --card-bg-hover: rgba(255, 255, 255, 0.88);
+  /* Saturated white glass hover state */
+
+  --border-color: rgba(255, 255, 255, 0.5);
+  /* Hairline crystal-white border */
+  --border-color-hover: rgba(236, 72, 153, 0.35);
+  /* Active rose-gold outline border */
+
   /* Core Accents (Selective, premium pink/fuchsia scales) */
-  --accent-pink-primary: #F43F5E; /* Coral Pink Rose */
-  --accent-pink-fuchsia: #EC4899; /* Blush Fuchsia */
-  --accent-pink-berry: #BE185D; /* Dark Cherry Berry */
-  
-  --text-primary: #701A75; /* High-contrast deep royal fuchsia for headers */
-  --text-secondary: #A21CAF; /* Sophisticated royal purple-pink for subheadings */
-  --text-muted: #3B222E; /* Warm plum-charcoal for paragraphs (perfect dark contrast) */
-  --text-dim: #86198F; /* Auxiliary fuchsia-berry caption tint */
-  
+  --accent-pink-primary: #F43F5E;
+  /* Coral Pink Rose */
+  --accent-pink-fuchsia: #EC4899;
+  /* Blush Fuchsia */
+  --accent-pink-berry: #BE185D;
+  /* Dark Cherry Berry */
+
+  --text-primary: #701A75;
+  /* High-contrast deep royal fuchsia for headers */
+  --text-secondary: #A21CAF;
+  /* Sophisticated royal purple-pink for subheadings */
+  --text-muted: #3B222E;
+  /* Warm plum-charcoal for paragraphs (perfect dark contrast) */
+  --text-dim: #86198F;
+  /* Auxiliary fuchsia-berry caption tint */
+
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-  
+
   --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-normal: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-slow: 0.75s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* --- RESET & BASE STYLES --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -40,7 +56,13 @@
 
 /* Hide default cursor on desktop screens to enable custom spring lag cursor */
 @media (pointer: fine) {
-  body, a, button, .btn, [role="button"], .glass-card {
+
+  body,
+  a,
+  button,
+  .btn,
+  [role="button"],
+  .glass-card {
     cursor: none !important;
   }
 }
@@ -59,9 +81,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
-  
+
   /* Delicate warm Rose Quartz pixel grid */
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 20%, rgba(236, 72, 153, 0.05) 0%, transparent 50%),
     linear-gradient(rgba(236, 72, 153, 0.015) 1px, transparent 1px),
     linear-gradient(90deg, rgba(236, 72, 153, 0.015) 1px, transparent 1px);
@@ -75,13 +97,16 @@ body {
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-color);
 }
+
 ::-webkit-scrollbar-thumb {
   background: rgba(236, 72, 153, 0.15);
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(236, 72, 153, 0.28);
 }
@@ -143,7 +168,9 @@ body {
 
 /* Show custom cursor on desktop pointer hoverable systems */
 @media (pointer: fine) {
-  .custom-cursor-dot, .custom-cursor-circle {
+
+  .custom-cursor-dot,
+  .custom-cursor-circle {
     display: block;
   }
 }
@@ -160,7 +187,12 @@ body {
 }
 
 /* --- TYPOGRAPHY --- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -264,7 +296,7 @@ a {
   background: var(--card-bg-hover);
   border-color: var(--border-color-hover);
   transform: translateY(-2px);
-  box-shadow: 
+  box-shadow:
     0 15px 35px -10px rgba(236, 72, 153, 0.12),
     0 0 1px 1px rgba(255, 255, 255, 0.6) inset;
 }
@@ -285,27 +317,36 @@ a {
   inset: 0;
   border-radius: inherit;
   padding: 1.25px;
-  background: linear-gradient(135deg, rgba(236,72,153,0.15), rgba(244,63,94,0.4), rgba(236,72,153,0.08), rgba(244,63,94,0.35));
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 63, 94, 0.4), rgba(236, 72, 153, 0.08), rgba(244, 63, 94, 0.35));
   background-size: 200% 200%;
-  -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;
+  mask-composite: exclude;
   pointer-events: none;
   animation: border-gradient-anim 6s linear infinite;
   z-index: 2;
 }
 
 @keyframes border-gradient-anim {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Subtle background glows */
 .aurora-blur {
-  display: none; /* Strip out stale components */
+  display: none;
+  /* Strip out stale components */
 }
 
 /* --- BUTTONS & CTAs --- */
@@ -335,7 +376,7 @@ a {
 .btn-primary:hover {
   transform: translateY(-1.5px);
   filter: brightness(1.08);
-  box-shadow: 
+  box-shadow:
     0 8px 20px -2px rgba(236, 72, 153, 0.45),
     0 0 15px rgba(244, 63, 94, 0.25);
 }
@@ -663,7 +704,7 @@ a {
   margin-bottom: 1.25rem;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(236,72,153,0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -672,7 +713,7 @@ a {
 }
 
 .expertise-card:hover .expertise-visual {
-  border-color: rgba(236,72,153,0.22);
+  border-color: rgba(236, 72, 153, 0.22);
   background: rgba(255, 255, 255, 0.55);
 }
 
@@ -873,7 +914,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(236,72,153,0.15);
+  border-bottom: 1px solid rgba(236, 72, 153, 0.15);
   padding-bottom: 0.4rem;
 }
 
@@ -886,7 +927,7 @@ a {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: rgba(236,72,153,0.22);
+  background: rgba(236, 72, 153, 0.22);
 }
 
 .mockup-grid {
@@ -896,8 +937,8 @@ a {
 }
 
 .mockup-widget {
-  background: rgba(255,255,255,0.015);
-  border: 1px solid rgba(236,72,153,0.12);
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(236, 72, 153, 0.12);
   border-radius: 4px;
   padding: 0.5rem;
   text-align: left;
@@ -905,8 +946,8 @@ a {
 
 .mockup-chart-main {
   flex-grow: 1;
-  background: rgba(255,255,255,0.015);
-  border: 1px solid rgba(236,72,153,0.12);
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(236, 72, 153, 0.12);
   border-radius: 4px;
   padding: 0.5rem;
   position: relative;
@@ -920,7 +961,7 @@ a {
   border-radius: 6px;
   overflow: hidden;
   background: #FFFDFC;
-  border: 1px solid rgba(236,72,153,0.15);
+  border: 1px solid rgba(236, 72, 153, 0.15);
 }
 
 .detection-overlay {
@@ -929,7 +970,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(236,72,153,0.1);
+  border: 1px solid rgba(236, 72, 153, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -946,23 +987,23 @@ a {
 
 .detection-box {
   position: absolute;
-  border: 1px dashed rgba(236,72,153,0.45);
+  border: 1px dashed rgba(236, 72, 153, 0.45);
   border-radius: 2px;
-  background: rgba(236,72,153,0.01);
+  background: rgba(236, 72, 153, 0.01);
 }
 
 .detection-box-error {
   position: absolute;
   border: 1.5px solid var(--accent-pink-primary);
   border-radius: 2px;
-  background: rgba(236,72,153,0.05);
+  background: rgba(236, 72, 153, 0.05);
 }
 
 .detection-label {
   position: absolute;
   top: -18px;
   left: -1px;
-  background: rgba(236,72,153,0.15);
+  background: rgba(236, 72, 153, 0.15);
   color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 0.6rem;
@@ -992,7 +1033,7 @@ a {
 }
 
 .flow-node-active {
-  fill: rgba(236,72,153,0.05);
+  fill: rgba(236, 72, 153, 0.05);
   stroke: var(--accent-pink-primary);
 }
 
@@ -1246,15 +1287,34 @@ a {
 
 /* --- ANIMATIONS --- */
 @keyframes pulse {
-  0% { transform: scale(0.95); opacity: 0.6; }
-  50% { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(0.95); opacity: 0.6; }
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
 }
 
 @keyframes scan {
-  0% { top: 0%; }
-  50% { top: 100%; }
-  100% { top: 0%; }
+  0% {
+    top: 0%;
+  }
+
+  50% {
+    top: 100%;
+  }
+
+  100% {
+    top: 0%;
+  }
 }
 
 /* Pure fluid viewport entry transitions */
@@ -1277,45 +1337,58 @@ a {
     text-align: center;
     padding-top: 4rem;
   }
+
   .hero-content {
     margin: 0 auto;
   }
+
   .hero-actions {
     justify-content: center;
   }
+
   .hero-visuals {
     max-width: 480px;
     margin: 0 auto;
   }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3.5rem;
   }
+
   .expertise-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .expertise-card {
     grid-column: span 2;
   }
+
   .expertise-card.double-width {
     grid-column: span 2;
   }
+
   .work-grid {
     grid-template-columns: 1fr;
   }
+
   .work-card-large {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+
   .work-card-large:nth-child(even) {
     grid-template-columns: 1fr;
   }
+
   .work-card-large:nth-child(even) .work-visuals-container {
     order: 0;
   }
+
   .research-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1325,15 +1398,19 @@ a {
   html {
     font-size: 15px;
   }
+
   .section {
     padding: 5rem 0;
   }
+
   .navbar {
     padding: 1rem 0;
   }
+
   .nav-links {
     display: none;
   }
+
   .nav-links.active {
     display: flex;
     flex-direction: column;
@@ -1347,37 +1424,48 @@ a {
     gap: 1.25rem;
     z-index: 999;
   }
+
   .mobile-menu-toggle {
     display: block;
   }
+
   .hero-title {
     font-size: 2.75rem;
   }
+
   .expertise-grid {
     grid-template-columns: 1fr;
   }
-  .expertise-card, .expertise-card.double-width {
+
+  .expertise-card,
+  .expertise-card.double-width {
     grid-column: span 1;
     height: auto;
     min-height: 240px;
   }
+
   .timeline-highlights {
     grid-template-columns: 1fr;
   }
+
   .research-grid {
     grid-template-columns: 1fr;
   }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
   .contact-title {
     font-size: 2rem;
   }
+
   .contact-actions {
     flex-direction: column;
     align-items: center;
     gap: 0.75rem;
   }
+
   .contact-actions .btn {
     width: 100%;
     max-width: 300px;
