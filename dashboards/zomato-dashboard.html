@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Food Delivery Analytics Platform | Namrata Paul</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .dashboard-gallery {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .dashboard-card {
+      background: var(--card-bg, rgba(20, 20, 30, 0.6));
+      border: 1px solid var(--border-color, rgba(255, 255, 255, 0.1));
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .dashboard-card:hover {
+      border-color: var(--accent-pink-primary, #ec4899);
+      transform: translateY(-4px);
+    }
+    .dashboard-img-wrapper {
+      width: 100%;
+      background: #000;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+    .dashboard-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .dashboard-card:hover .dashboard-img {
+      transform: scale(1.01);
+    }
+    .dashboard-info {
+      padding: 1.5rem 1.75rem;
+    }
+    .dashboard-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(236, 72, 153, 0.15);
+      color: #f472b6;
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+    .dashboard-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .dashboard-desc {
+      color: var(--text-secondary, #94a3b8);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .tech-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.8rem;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 8px;
+      font-size: 0.82rem;
+      color: #e2e8f0;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .tabs-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .tab-btn {
+      padding: 0.6rem 1.2rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #94a3b8;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .tab-btn:hover, .tab-btn.active {
+      background: var(--accent-pink-primary, #ec4899);
+      color: #fff;
+      border-color: var(--accent-pink-primary, #ec4899);
+      box-shadow: 0 4px 15px rgba(236, 72, 153, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-cursor-dot" id="cursor-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,2 C11.5,4 9,5 7.5,7 C5,10 5,14.5 8.5,17.5 C11,19.5 12,21 12,21 C12,21 13,19.5 15.5,17.5 C19,14.5 19,10 16.5,7 C15,5 12.5,4 12,2 Z" fill="var(--accent-pink-primary)" stroke="#FFFFFF" stroke-width="1.25"/></svg></div>
+  <div class="custom-cursor-circle" id="cursor-circle"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><g transform="translate(20,20)"><path d="M0,0 C-3,-8 -5,-12 -5,-16 C-5,-19 -2,-21 0,-19 C2,-21 5,-19 5,-16 C5,-12 3,-8 0,0 Z" fill="rgba(236, 72, 153, 0.04)" stroke="rgba(236, 72, 153, 0.32)" stroke-width="1.25"/></g></svg></div>
+  <canvas id="sakura-canvas"></canvas>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span>Namrata</span> Paul</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#work" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="../index.html#research" class="nav-link">Research</a></li>
+        <li><a href="../index.html#education" class="nav-link">Education</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme">
+            <span id="theme-toggle-icon">🌸</span> <span id="theme-toggle-text">Sakura</span>
+          </button>
+        </li>
+        <li><a href="../NamrataPaulCV.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">View Resume</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 8rem; padding-bottom: 5rem;">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../pages/analytics.html">Analytics</a> / <span>Zomato Analytics Platform</span></div>
+    
+    <div class="section-header">
+      <div class="section-label">POWER BI & PRODUCT ANALYTICS</div>
+      <h1 class="section-title">Zomato Food Delivery Analytics Platform</h1>
+      <p class="section-subtitle">An end-to-end Business Intelligence solution designed to help product and business teams monitor platform health, optimize delivery performance, and improve retention.</p>
+    </div>
+
+    <!-- Tech Stack Pills -->
+    <div style="margin-bottom: 2rem; display: flex; flex-wrap: wrap;">
+      <span class="tech-pill">PostgreSQL</span>
+      <span class="tech-pill">SQL</span>
+      <span class="tech-pill">Power BI</span>
+      <span class="tech-pill">DAX</span>
+      <span class="tech-pill">Business Intelligence</span>
+      <span class="tech-pill">Product Analytics</span>
+    </div>
+
+    <!-- Overview Box -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">Platform Overview & Purpose</h2>
+      <p style="margin-bottom: 1.25rem; line-height: 1.7; font-size: 1.05rem;">
+        Food Delivery Analytics Platform is an end-to-end Business Intelligence solution designed to help product and business teams monitor the health of a food delivery platform. By integrating operational, transactional, and customer interaction data, the platform enables stakeholders to identify revenue drivers, optimize delivery performance, improve customer retention, and uncover conversion bottlenecks across the user journey. Interactive dashboards provide actionable insights into executive KPIs, customer behavior, operational efficiency, and business growth, supporting data-driven product and strategic decision-making.
+      </p>
+      
+      <ul class="detail-list">
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Executive KPI Tracking:</strong> Real-time monitoring of Gross Revenue (₹7.68M+), Order Volumes (11K+), Customer Base (6K+), and Churn Rates.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Revenue & Restaurant Intelligence:</strong> Comprehensive breakdown of restaurant performance, rating vs revenue correlations, and cuisine revenue distributions.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Operational Delivery Telemetry:</strong> SLA tracking for average delivery duration (26.23 mins), cancellation reason categorization, and rider efficiency.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Funnel & Conversion Analytics:</strong> Multi-stage conversion funnel telemetry tracking app opens to payment completion with drop-off bottlenecks.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Retention & Cohort Decay:</strong> Customer lifetime value (CLV) segmentation, signup cohort retention rates (91.37%), and repeat purchase rate analysis (50.65%).</li>
+      </ul>
+    </div>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="section-header" style="margin-top: 3rem; margin-bottom: 0.5rem;">
+      <h2 class="section-title" style="font-size: 1.6rem;">Dashboard Suite Showcase</h2>
+      <p class="section-subtitle">Explore all 5 interactive Power BI command center dashboards below:</p>
+    </div>
+
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="scrollToDashboard('dash-overview')">1. Executive Overview</button>
+      <button class="tab-btn" onclick="scrollToDashboard('dash-revenue')">2. Revenue & Restaurants</button>
+      <button class="tab-btn" onclick="scrollToDashboard('dash-operations')">3. Delivery & Operations</button>
+      <button class="tab-btn" onclick="scrollToDashboard('dash-funnel')">4. Product & Funnel</button>
+      <button class="tab-btn" onclick="scrollToDashboard('dash-retention')">5. Retention & Churn</button>
+    </div>
+
+    <!-- Dashboards Gallery -->
+    <div class="dashboard-gallery">
+      
+      <!-- 1. Overview Dashboard -->
+      <div class="dashboard-card" id="dash-overview">
+        <div class="dashboard-img-wrapper">
+          <img src="images/zomato-overview-dashboard.png" alt="Executive Delivery Dashboard" class="dashboard-img" loading="lazy">
+        </div>
+        <div class="dashboard-info">
+          <span class="dashboard-badge">DASHBOARD 1 • EXECUTIVE VIEW</span>
+          <h3 class="dashboard-title">Executive Delivery Dashboard</h3>
+          <p class="dashboard-desc">
+            Provides C-suite and Product Leaders with high-level command metrics including Total Revenue (₹7.684M), Order Counts (11K), Active Customers (6K), and Churn Rate (79.70%). Features monthly revenue trend forecasting, top restaurant revenue rankings (New Prashanth Hotel, Onesta), payment method distributions (UPI, Wallet, Cash, Card), location demand maps, and delivery status breakdown (84.78% delivered successfully).
+          </p>
+        </div>
+      </div>
+
+      <!-- 2. Revenue & Restaurants -->
+      <div class="dashboard-card" id="dash-revenue">
+        <div class="dashboard-img-wrapper">
+          <img src="images/zomato-revenue-dashboard.png" alt="Revenue Analytics Dashboard" class="dashboard-img" loading="lazy">
+        </div>
+        <div class="dashboard-info">
+          <span class="dashboard-badge">DASHBOARD 2 • REVENUE INTELLIGENCE</span>
+          <h3 class="dashboard-title">Revenue & Restaurant Analytics</h3>
+          <p class="dashboard-desc">
+            Evaluates partner restaurant monetization and unit economics. Highlights Total Restaurant Revenue (₹8M), Active Restaurant Count (28K), Average Revenue Per Restaurant (₹276.46), and Top Rated Partners (8K). Features a Rating vs. Revenue scatter matrix identifying rating sweet spots, cuisine revenue leaders (South Indian, North Indian, Fast Food), and top restaurant category types (Quick Bites, Casual Dining, Cafes).
+          </p>
+        </div>
+      </div>
+
+      <!-- 3. Delivery & Operations -->
+      <div class="dashboard-card" id="dash-operations">
+        <div class="dashboard-img-wrapper">
+          <img src="images/zomato-delivery-operations-dashboard.png" alt="Delivery and Operations Analytics Dashboard" class="dashboard-img" loading="lazy">
+        </div>
+        <div class="dashboard-info">
+          <span class="dashboard-badge">DASHBOARD 3 • OPERATIONS TELEMETRY</span>
+          <h3 class="dashboard-title">Delivery & Operations Analytics</h3>
+          <p class="dashboard-desc">
+            Tracks logistics efficiency, SLA bottlenecks, and rider network health. Monitors Average Delivery Duration (26.23 mins), Late Deliveries (845), Successful Deliveries (10K), and Order Cancellation Rate (2K). Features average delivery time progression over time, delivery status donut chart, total active riders (4K), and cancellation reason categorizations (Customer Cancelled, Late Delivery, Restaurant Cancelled, Payment Failure).
+          </p>
+        </div>
+      </div>
+
+      <!-- 4. Product & Funnel -->
+      <div class="dashboard-card" id="dash-funnel">
+        <div class="dashboard-img-wrapper">
+          <img src="images/zomato-product-funnel-dashboard.png" alt="Product and Funnel Analytics Dashboard" class="dashboard-img" loading="lazy">
+        </div>
+        <div class="dashboard-info">
+          <span class="dashboard-badge">DASHBOARD 4 • USER FUNNEL</span>
+          <h3 class="dashboard-title">Product & Funnel Analytics</h3>
+          <p class="dashboard-desc">
+            Maps user conversion journeys from discovery to payment completion. Tracks Total App Opens (110K), Restaurant Clicks (110K), Cart Adds (88K), Checkouts (61K), and Payment Success (55.32K). Quantifies the 50.4% overall end-to-end conversion rate, cart abandonment rates (30.15%), platform conversion performance across Card, Cash, UPI, and Wallet, and monthly conversion stability trends.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. Retention & Churn -->
+      <div class="dashboard-card" id="dash-retention">
+        <div class="dashboard-img-wrapper">
+          <img src="images/zomato-retention-churn-dashboard.png" alt="Retention and Churn Analytics Dashboard" class="dashboard-img" loading="lazy">
+        </div>
+        <div class="dashboard-info">
+          <span class="dashboard-badge">DASHBOARD 5 • COHORT LOYALTY</span>
+          <h3 class="dashboard-title">Retention & Churn Analytics</h3>
+          <p class="dashboard-desc">
+            Analyzes customer lifetime value (CLV) and long-term product stickiness. Features Overall Retention Rate (91.37%), Repeat Purchase Rate (50.65%), and Top Performing City (Banashankari). Includes Customer Lifetime Value segmentation (High Value, Mid-High, Mid, Low), Churn Reasons breakdown (Better Offers Elsewhere, High Delivery Charges, Long Delivery Time), and Retention Rate decay across signup cohorts from 2025 to 2026.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script>
+    function scrollToDashboard(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      // Update tab active state
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>

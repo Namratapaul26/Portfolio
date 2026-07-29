@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Namrata Paul | Research Analyst • Data Professional • Machine Learning Engineer</title>
+  <title>Namrata Paul | AI Product Manager • Data Professional • Machine Learning Engineer</title>
   <meta name="description"
-    content="Portfolio of Namrata Paul. Research Analyst, Data Professional, and Machine Learning Engineer focused on transforming data into strategic decisions through analytics, research, and AI.">
+    content="Portfolio of Namrata Paul. AI Product Manager, Data Professional, and Machine Learning Engineer focused on driving product strategy, data-driven decisions, analytics, and intelligent systems.">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,16 +15,14 @@
 
   <!-- Dynamic Custom Trailing Cursor -->
   <div class="custom-cursor-dot" id="cursor-dot">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-      style="transform: rotate(-20deg); display: block;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M12,2 C11.5,4 9,5 7.5,7 C5,10 5,14.5 8.5,17.5 C11,19.5 12,21 12,21 C12,21 13,19.5 15.5,17.5 C19,14.5 19,10 16.5,7 C15,5 12.5,4 12,2 Z"
         fill="var(--accent-pink-primary)" stroke="#FFFFFF" stroke-width="1.25" />
     </svg>
   </div>
   <div class="custom-cursor-circle" id="cursor-circle">
-    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"
-      style="display: block;">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(20,20)">
         <path d="M0,0 C-3,-8 -5,-12 -5,-16 C-5,-19 -2,-21 0,-19 C2,-21 5,-19 5,-16 C5,-12 3,-8 0,0 Z"
           fill="rgba(236, 72, 153, 0.04)" stroke="rgba(236, 72, 153, 0.32)" stroke-width="1.25" />
@@ -50,10 +49,10 @@
   <!-- Sakura Falling Leaves Canvas Background -->
   <canvas id="sakura-canvas"></canvas>
 
-  <!-- --- NAVIGATION BAR --- -->
+  <!-- --- TOP NAVIGATION BAR --- -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="nav-brand">
+      <a href="index.html" class="nav-brand">
         <span>Namrata</span> Paul
       </a>
       <ul class="nav-links" id="nav-links">
@@ -61,8 +60,12 @@
         <li><a href="#work" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#education" class="nav-link">Education</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme">
+            <span id="theme-toggle-icon">🌸</span> <span id="theme-toggle-text">Sakura</span>
+          </button>
+        </li>
         <li><a href="NamrataPaulCV.pdf" target="_blank" class="btn btn-secondary"
             style="padding: 0.5rem 1.25rem; font-size: 0.85rem;" id="nav-resume-btn">View Resume</a></li>
       </ul>
@@ -83,15 +86,16 @@
       <div class="hero-content">
         <div class="hero-pill premium-glow">
           <span class="hero-pill-status"></span>
-          Research Analyst • Data Professional • Machine Learning Engineer
+          AI Product Manager • Data & Product Analytics • Machine Learning Engineer
         </div>
         <h1 class="hero-title" style="font-size: 3.25rem;">
           Transforming Data Into <span>Strategic Decisions.</span>
         </h1>
         <p class="hero-subtext">
-          I build intelligent systems, analytics platforms, and machine learning solutions that convert complex datasets
-          into actionable business insights. My work spans product analytics, business intelligence, research strategy,
-          computer vision, and predictive modeling.
+          I build intelligent AI products, analytics platforms, and data-driven solutions that convert complex user
+          insights and datasets
+          into strategic business outcomes. My work spans AI product management, product analytics, business strategy,
+          computer vision, and machine learning.
         </p>
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary" id="hero-cta-primary">
@@ -113,8 +117,7 @@
         <!-- Card 1 -->
         <div class="metric-card glass-card">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
             </svg>
           </div>
@@ -127,8 +130,7 @@
         <!-- Card 2 -->
         <div class="metric-card glass-card">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M23 7l-7 5 7 5V7z"></path>
               <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
             </svg>
@@ -142,8 +144,7 @@
         <!-- Card 3 -->
         <div class="metric-card glass-card">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="18" y1="20" x2="18" y2="10"></line>
               <line x1="12" y1="20" x2="12" y2="4"></line>
               <line x1="6" y1="20" x2="6" y2="14"></line>
@@ -158,10 +159,8 @@
         <!-- Card 4 -->
         <div class="metric-card glass-card">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
           </div>
           <div>
@@ -173,11 +172,9 @@
         <!-- Card 5 -->
         <div class="metric-card glass-card">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
           </div>
           <div>
@@ -189,8 +186,7 @@
         <!-- Card 6 -->
         <div class="metric-card glass-card premium-glow">
           <div class="metric-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polygon
                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
               </polygon>
@@ -205,656 +201,364 @@
     </div>
   </header>
 
-  <!-- --- ABOUT SECTION --- -->
-  <section class="section fade-in-entry" id="about">
+  <!-- --- ABOUT SECTION (EXACT ORIGINAL NARRATIVE & STRATEGIC FLOW SYSTEM) --- -->
+  <section class="section" id="about">
     <div class="container">
+      <div class="section-header">
+        <div class="section-label">NARRATIVE</div>
+        <h2 class="section-title">Driven By Data.<br>Focused On Impact.</h2>
+      </div>
+
       <div class="about-grid">
+        <!-- Left Column: About Text -->
         <div class="about-text">
-          <div class="section-label">Narrative</div>
-          <h2 class="section-title">Driven By Data. <br>Focused On Impact.</h2>
-          <p>
-            I am a Computer Science Engineering student at Lovely Professional University with experience in research
-            strategy, analytics, machine learning, and intelligent systems development.
-          </p>
-          <p>
-            My work focuses on uncovering meaningful insights from data, building scalable analytics solutions, and
-            developing AI-powered applications that solve real-world challenges.
-          </p>
-          <p>
-            I enjoy combining technical expertise, analytical thinking, and business understanding to create solutions
-            that drive measurable outcomes.
-          </p>
-          <div
-            style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--text-muted);">
-            <div>📍 Based in Bengaluru, Karnataka, India</div>
-            <div>🎓 B.Tech in Computer Science and Engineering at Lovely Professional University</div>
-          </div>
+          <p>I am a Computer Science Engineering student at Lovely Professional University with experience in research
+            strategy, analytics, machine learning, and intelligent systems development.</p>
+          <p>My work focuses on uncovering meaningful insights from data, building scalable analytics solutions, and
+            developing AI-powered applications that solve real-world challenges.</p>
+          <p>I enjoy combining technical expertise, analytical thinking, and business understanding to create solutions
+            that drive measurable outcomes.</p>
+
+          <ul class="about-bullets">
+            <li class="about-bullet-item">📍 Based in Bengaluru, Karnataka, India</li>
+            <li class="about-bullet-item">🎓 B.Tech in Computer Science and Engineering at Lovely Professional
+              University</li>
+          </ul>
         </div>
 
-        <!-- Complex Interactive SVG Data Flow Graph -->
+        <!-- Right Column: Strategic Flow System Graphic -->
         <div class="about-graphic-container">
           <div class="about-graphic glass-card">
             <div class="chart-header">
               <div class="chart-title">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink-primary)"
-                  stroke-width="2">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
                 </svg>
                 STRATEGIC FLOW SYSTEM
               </div>
               <div class="chart-status">Active Pipeline</div>
             </div>
 
-            <svg width="100%" height="80%" viewBox="0 0 400 300" style="display: block;">
-              <!-- Grid Background lines -->
-              <line x1="0" y1="50" x2="400" y2="50" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="0" y1="150" x2="400" y2="150" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="0" y1="200" x2="400" y2="200" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="0" y1="250" x2="400" y2="250" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
+            <div style="flex-grow: 1; display: flex; align-items: center; justify-content: center; position: relative;">
+              <svg width="100%" height="220" viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background vertical grid lines -->
+                <line x1="100" y1="20" x2="100" y2="200" stroke="rgba(236,72,153,0.1)" stroke-dasharray="3 3" />
+                <line x1="200" y1="20" x2="200" y2="200" stroke="rgba(236,72,153,0.1)" stroke-dasharray="3 3" />
+                <line x1="300" y1="20" x2="300" y2="200" stroke="rgba(236,72,153,0.1)" stroke-dasharray="3 3" />
 
-              <line x1="80" y1="0" x2="80" y2="300" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="160" y1="0" x2="160" y2="300" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="240" y1="0" x2="240" y2="300" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
-              <line x1="320" y1="0" x2="320" y2="300" stroke="rgba(244, 63, 94, 0.04)" stroke-width="1" />
+                <!-- Flow curve line -->
+                <path d="M 50 130 C 120 40, 180 200, 250 120 C 290 70, 320 130, 350 130"
+                  stroke="var(--accent-pink-primary)" stroke-width="2" stroke-dasharray="4 4" fill="none" />
 
-              <!-- Connection Links with gradient glow -->
-              <path d="M 50,150 Q 120,60 200,150 T 350,150" fill="none" stroke="rgba(244, 63, 94, 0.15)"
-                stroke-width="1.5" />
-              <path d="M 50,150 Q 120,240 200,150 T 350,150" fill="none" stroke="rgba(244, 63, 94, 0.15)"
-                stroke-width="1.5" />
+                <!-- Node 1: RAW DATA -->
+                <circle cx="50" cy="130" r="7" fill="var(--accent-pink-primary)" />
+                <circle cx="50" cy="130" r="12" stroke="var(--accent-pink-primary)" stroke-width="1.5" fill="none" />
+                <text x="50" y="160" text-anchor="middle" fill="var(--text-primary)" font-size="10" font-weight="700"
+                  font-family="var(--font-mono)">RAW DATA</text>
 
-              <!-- Direct active pipeline -->
-              <path id="active-path" d="M 50,150 C 120,100 180,200 200,150 C 220,100 280,200 350,150" fill="none"
-                stroke="url(#active-path-grad)" stroke-width="2" stroke-dasharray="4 4" />
+                <!-- Node 2: STRATEGY -->
+                <circle cx="150" cy="85" r="7" fill="var(--accent-pink-primary)" />
+                <circle cx="150" cy="85" r="12" stroke="var(--accent-pink-primary)" stroke-width="1.5" fill="none" />
+                <text x="150" y="62" text-anchor="middle" fill="var(--text-primary)" font-size="10" font-weight="700"
+                  font-family="var(--font-mono)">STRATEGY</text>
 
-              <!-- Data Nodes -->
-              <!-- Input node -->
-              <circle cx="50" cy="150" r="12" fill="var(--bg-color)" stroke="rgba(244, 63, 94, 0.3)"
-                stroke-width="1.5" />
-              <circle cx="50" cy="150" r="4" fill="var(--accent-pink-primary)" />
-              <text x="50" y="180" fill="var(--text-muted)" font-size="8" text-anchor="middle"
-                font-family="var(--font-mono)" font-weight="600">RAW DATA</text>
+                <!-- Node 3: ML MODELS -->
+                <circle cx="235" cy="155" r="7" fill="var(--accent-pink-primary)" />
+                <circle cx="235" cy="155" r="12" stroke="var(--accent-pink-primary)" stroke-width="1.5" fill="none" />
+                <text x="235" y="185" text-anchor="middle" fill="var(--text-primary)" font-size="10" font-weight="700"
+                  font-family="var(--font-mono)">ML MODELS</text>
 
-              <!-- Strategy Node -->
-              <circle cx="150" cy="100" r="10" fill="var(--bg-color)" stroke="rgba(244, 63, 94, 0.3)"
-                stroke-width="1.5" />
-              <circle cx="150" cy="100" r="3" fill="var(--accent-pink-primary)" />
-              <text x="150" y="125" fill="var(--text-muted)" font-size="8" text-anchor="middle"
-                font-family="var(--font-mono)" font-weight="600">STRATEGY</text>
-
-              <!-- ML/AI Processing Node -->
-              <circle cx="250" cy="200" r="10" fill="var(--bg-color)" stroke="rgba(244, 63, 94, 0.3)"
-                stroke-width="1.5" />
-              <circle cx="250" cy="200" r="3" fill="var(--accent-pink-primary)" />
-              <text x="250" y="225" fill="var(--text-muted)" font-size="8" text-anchor="middle"
-                font-family="var(--font-mono)" font-weight="600">ML MODELS</text>
-
-              <!-- Output Insight Node -->
-              <circle cx="350" cy="150" r="12" fill="var(--bg-color)" stroke="var(--accent-pink-berry)"
-                stroke-width="2" />
-              <circle cx="350" cy="150" r="4" fill="var(--accent-pink-berry)" />
-              <text x="350" y="180" fill="var(--text-primary)" font-size="8" text-anchor="middle"
-                font-family="var(--font-mono)" font-weight="700">DECISION</text>
-
-              <!-- Gradient definitions -->
-              <defs>
-                <linearGradient id="active-path-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="var(--accent-pink-fuchsia)" />
-                  <stop offset="50%" stop-color="var(--accent-pink-primary)" />
-                  <stop offset="100%" stop-color="var(--accent-pink-berry)" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- EXPERTISE SECTION --- -->
-  <section class="section fade-in-entry" id="expertise">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Core Competencies</div>
-        <h2 class="section-title">Designed for Business Impact</h2>
-        <p class="section-subtitle">A multidisciplinary skillset optimized to bridge technical data architectures and
-          executive business decisions.</p>
-      </div>
-
-      <div class="expertise-grid">
-        <!-- Card 1: Analytics -->
-        <div class="expertise-card glass-card">
-          <div class="expertise-visual">
-            <svg width="100" height="60" viewBox="0 0 100 60">
-              <rect x="10" y="45" width="12" height="10" rx="1" fill="rgba(244, 63, 94, 0.02)"
-                stroke="var(--accent-pink-primary)" stroke-width="1.25" />
-              <rect x="30" y="30" width="12" height="25" rx="1" fill="rgba(244, 63, 94, 0.05)"
-                stroke="var(--accent-pink-primary)" stroke-width="1.25" />
-              <rect x="50" y="15" width="12" height="40" rx="1" fill="rgba(244, 63, 94, 0.1)"
-                stroke="var(--accent-pink-primary)" stroke-width="1.25" />
-              <circle cx="80" cy="15" r="4" fill="var(--accent-pink-berry)" />
-              <path d="M 16,45 L 36,30 L 56,15 L 80,15" fill="none" stroke="var(--accent-pink-primary)"
-                stroke-width="1.5" stroke-dasharray="2 2" />
-            </svg>
-          </div>
-          <div class="expertise-content">
-            <h3>Analytics</h3>
-            <p>Transforming complex datasets into actionable insights.</p>
-          </div>
-        </div>
-
-        <!-- Card 2: AI -->
-        <div class="expertise-card glass-card">
-          <div class="expertise-visual">
-            <svg width="100" height="60" viewBox="0 0 100 60">
-              <!-- Neural synapse visual -->
-              <circle cx="20" cy="30" r="3.5" fill="var(--accent-pink-primary)" />
-              <circle cx="50" cy="15" r="3.5" fill="var(--accent-pink-primary)" />
-              <circle cx="50" cy="45" r="3.5" fill="var(--accent-pink-primary)" />
-              <circle cx="80" cy="30" r="4.5" fill="var(--accent-pink-berry)" />
-
-              <line x1="20" y1="30" x2="50" y2="15" stroke="rgba(244, 63, 94, 0.2)" stroke-width="1.25" />
-              <line x1="20" y1="30" x2="50" y2="45" stroke="rgba(244, 63, 94, 0.2)" stroke-width="1.25" />
-              <line x1="50" y1="15" x2="80" y2="30" stroke="rgba(244, 63, 94, 0.25)" stroke-width="1.25" />
-              <line x1="50" y1="45" x2="80" y2="30" stroke="rgba(244, 63, 94, 0.25)" stroke-width="1.25" />
-              <line x1="50" y1="15" x2="50" y2="45" stroke="rgba(244, 63, 94, 0.1)" stroke-width="1.25" />
-            </svg>
-          </div>
-          <div class="expertise-content">
-            <h3>Artificial Intelligence</h3>
-            <p>Designing intelligent models and computer vision pipelines.</p>
-          </div>
-        </div>
-
-        <!-- Card 3: Research -->
-        <div class="expertise-card glass-card">
-          <div class="expertise-visual">
-            <svg width="100" height="60" viewBox="0 0 100 60">
-              <!-- Gaussian bell / trend line -->
-              <path d="M 10,50 Q 30,50 50,15 T 90,15" fill="none" stroke="var(--accent-pink-primary)"
-                stroke-width="1.75" />
-              <line x1="10" y1="50" x2="90" y2="50" stroke="rgba(244, 63, 94, 0.15)" stroke-width="1.25" />
-              <circle cx="50" cy="15" r="3.5" fill="var(--accent-pink-berry)" />
-              <line x1="50" y1="15" x2="50" y2="50" stroke="rgba(244, 63, 94, 0.25)" stroke-width="1"
-                stroke-dasharray="2 2" />
-            </svg>
-          </div>
-          <div class="expertise-content">
-            <h3>Research & Strategy</h3>
-            <p>Identifying patterns and growth levers through structured analysis.</p>
-          </div>
-        </div>
-
-        <!-- Card 4: BI -->
-        <div class="expertise-card glass-card double-width">
-          <div class="expertise-visual">
-            <svg width="180" height="60" viewBox="0 0 180 60">
-              <!-- Dashboard mockup dials -->
-              <circle cx="40" cy="30" r="18" fill="none" stroke="rgba(244, 63, 94, 0.08)" stroke-width="2" />
-              <path d="M 25,39 A 18,18 0 1,1 55,39" fill="none" stroke="var(--accent-pink-primary)"
-                stroke-width="2.5" />
-              <line x1="40" y1="30" x2="48" y2="22" stroke="var(--accent-pink-berry)" stroke-width="2.25"
-                stroke-linecap="round" />
-
-              <circle cx="140" cy="30" r="18" fill="none" stroke="rgba(244, 63, 94, 0.08)" stroke-width="2" />
-              <path d="M 125,39 A 18,18 0 1,1 155,30" fill="none" stroke="var(--accent-pink-fuchsia)"
-                stroke-width="2.5" />
-              <line x1="140" y1="30" x2="150" y2="24" stroke="var(--accent-pink-berry)" stroke-width="2.25"
-                stroke-linecap="round" />
-            </svg>
-          </div>
-          <div class="expertise-content">
-            <h3>Business Intelligence</h3>
-            <p>Building clean dashboard systems that support decision-making.</p>
-          </div>
-        </div>
-
-        <!-- Card 5: Problem Solving -->
-        <div class="expertise-card glass-card double-width">
-          <div class="expertise-visual">
-            <svg width="180" height="60" viewBox="0 0 180 60">
-              <!-- Network paths finding output -->
-              <path d="M 20,30 L 60,15 L 100,45 L 160,30" fill="none" stroke="rgba(244, 63, 94, 0.08)"
-                stroke-width="1.25" />
-              <path d="M 20,30 L 60,45 L 120,15 L 160,30" fill="none" stroke="var(--accent-pink-primary)"
-                stroke-width="1.5" stroke-dasharray="3 3" />
-              <circle cx="20" cy="30" r="3.5" fill="var(--accent-pink-fuchsia)" />
-              <circle cx="160" cy="30" r="4.5" fill="var(--accent-pink-berry)" />
-            </svg>
-          </div>
-          <div class="expertise-content">
-            <h3>Problem Solving</h3>
-            <p>Converting complex technical challenges into production systems.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- --- FEATURED WORK SECTION --- -->
-  <section class="section fade-in-entry" id="work">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label">Product Portfolio</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Deep vertical systems built to solve delivery analytics, computer vision quality
-          inspection, and intelligent recommendations.</p>
-      </div>
-
-      <div class="work-grid">
-        <!-- Project 1: Zomato Delivery Analytics & Intelligence Platform -->
-        <div class="work-card-large glass-card">
-          <div class="work-details">
-            <div class="hero-pill">
-              DATA ENGINEERING & ANALYTICS ECOSYSTEM
-            </div>
-            <h3>Zomato Delivery Analytics & Intelligence Platform</h3>
-            <p>
-              Built an end-to-end analytics ecosystem integrating multiple real-world datasets with synthetic behavioral
-              pipelines. Processed more than 100,000 transactional and event records using automated ETL workflows and
-              scalable data warehousing techniques.
-            </p>
-            <ul class="outcomes-list">
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                100K+ records processed with ETL pipelines
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Analytical models for Cohort & Churn analytics
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Delivery SLA Tracking & Cancellation Intelligence
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Interactive operational dashboards for forecasting
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Improved decision visibility by 45%
-              </li>
-            </ul>
-          </div>
-
-          <!-- High-Fidelity SVG Dashboard Mockup -->
-          <div class="work-visuals-container">
-            <div class="mockup-dashboard">
-              <div class="mockup-header">
-                <div class="mockup-tabs">
-                  <span class="mockup-tab"></span>
-                  <span class="mockup-tab"></span>
-                  <span class="mockup-tab"></span>
-                </div>
-                <div class="chart-status" style="font-size: 0.6rem; padding: 0.1rem 0.4rem;">Zomato_SLA.sql</div>
-              </div>
-              <div class="mockup-grid">
-                <div class="mockup-widget">
-                  <div style="font-size: 0.55rem; color:var(--text-dim); font-family: var(--font-mono);">SLA COMPLIANCE
-                  </div>
-                  <div style="font-size: 0.95rem; font-weight:700; color:var(--text-secondary);">94.8%</div>
-                </div>
-                <div class="mockup-widget">
-                  <div style="font-size: 0.55rem; color:var(--text-dim); font-family: var(--font-mono);">CANCELLATION
-                  </div>
-                  <div style="font-size: 0.95rem; font-weight:700; color:var(--text-secondary);">1.8%</div>
-                </div>
-                <div class="mockup-widget">
-                  <div style="font-size: 0.55rem; color:var(--text-dim); font-family: var(--font-mono);">DECISION LIFT
-                  </div>
-                  <div style="font-size: 0.95rem; font-weight:700; color:var(--text-primary);">+45%</div>
-                </div>
-              </div>
-              <!-- SVG chart line -->
-              <div class="mockup-chart-main">
-                <svg width="100%" height="100%" viewBox="0 0 200 80" style="display:block;">
-                  <path d="M 0,70 L 30,55 L 60,60 L 90,30 L 120,40 L 150,15 L 180,10 L 200,20" fill="none"
-                    stroke="var(--accent-pink-primary)" stroke-width="1.5" />
-                  <path d="M 0,70 L 30,55 L 60,60 L 90,30 L 120,40 L 150,15 L 180,10 L 200,20 L 200,80 L 0,80 Z"
-                    fill="url(#dash-chart-grad)" opacity="0.04" />
-                  <!-- Grid horizontal -->
-                  <line x1="0" y1="20" x2="200" y2="20" stroke="rgba(244, 63, 94, 0.05)" stroke-width="0.5" />
-                  <line x1="0" y1="40" x2="200" y2="40" stroke="rgba(244, 63, 94, 0.05)" stroke-width="0.5" />
-                  <line x1="0" y1="60" x2="200" y2="60" stroke="rgba(244, 63, 94, 0.05)" stroke-width="0.5" />
-
-                  <defs>
-                    <linearGradient id="dash-chart-grad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stop-color="var(--accent-pink-primary)" />
-                      <stop offset="100%" stop-color="transparent" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Car Defect Detection System -->
-        <div class="work-card-large glass-card premium-glow">
-          <!-- Bounding Boxes Mockup visual -->
-          <div class="work-visuals-container">
-            <div class="detection-interface">
-              <div class="detection-scanner"></div>
-
-              <!-- Chipboard Background SVG -->
-              <svg width="100%" height="100%" viewBox="0 0 300 200" opacity="0.35">
-                <rect x="40" y="40" width="220" height="120" rx="4" fill="none" stroke="var(--accent-pink-primary)"
-                  stroke-width="1.5" />
-                <!-- Lines & pins representing technical circuit components -->
-                <line x1="80" y1="20" x2="80" y2="40" stroke="var(--accent-pink-primary)" stroke-width="1" />
-                <line x1="120" y1="20" x2="120" y2="40" stroke="var(--accent-pink-primary)" stroke-width="1" />
-                <line x1="160" y1="20" x2="160" y2="40" stroke="var(--accent-pink-primary)" stroke-width="1" />
-                <line x1="200" y1="20" x2="200" y2="40" stroke="var(--accent-pink-primary)" stroke-width="1" />
-
-                <rect x="100" y="80" width="100" height="40" rx="2" fill="none" stroke="var(--accent-pink-fuchsia)"
-                  stroke-width="1.5" />
-                <circle cx="150" cy="100" r="10" fill="none" stroke="var(--accent-pink-fuchsia)" stroke-width="1" />
+                <!-- Node 4: DECISION -->
+                <circle cx="350" cy="130" r="7" fill="var(--accent-pink-primary)" />
+                <circle cx="350" cy="130" r="12" stroke="var(--accent-pink-primary)" stroke-width="1.5" fill="none" />
+                <text x="350" y="160" text-anchor="middle" fill="var(--text-primary)" font-size="10" font-weight="700"
+                  font-family="var(--font-mono)">DECISION</text>
               </svg>
-
-              <!-- Detection boxes overlay -->
-              <div class="detection-box"
-                style="top: 30px; left: 40px; width: 80px; height: 90px; border-color: var(--accent-pink-fuchsia); background: rgba(244, 63, 94, 0.02);">
-                <div class="detection-label" style="background: var(--accent-pink-fuchsia); color: #FFFFFF;">SURFACE
-                  [OK]</div>
-              </div>
-
-              <div class="detection-box-error"
-                style="top: 80px; left: 150px; width: 110px; height: 70px; border-color: var(--accent-pink-primary); background: rgba(244, 63, 94, 0.05); box-shadow: 0 0 10px rgba(244, 63, 94, 0.15);">
-                <div class="detection-label-error">DENT [DETECTED]</div>
-              </div>
-
-              <!-- Console Log Overlay -->
-              <div
-                style="position: absolute; bottom: 8px; left: 8px; font-family: var(--font-mono); font-size: 0.6rem; color:var(--text-primary); background:rgba(255,255,255,0.85); padding: 4px 8px; border-radius: 3px; border: 1px solid rgba(244, 63, 94, 0.15);">
-                YOLOv5: Inference complete • mAP: 0.86
-              </div>
             </div>
-          </div>
-
-          <div class="work-details">
-            <div class="hero-pill">
-              COMPUTER VISION & AI
-            </div>
-            <h3>Car Defect Detection System</h3>
-            <p>
-              Developed an end-to-end computer vision solution for automated vehicle defect detection. Designed to
-              identify scratches, dents, and physical damages using advanced object detection models.
-            </p>
-            <ul class="outcomes-list">
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                92% detection accuracy overall
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Achieved mAP score of 0.86
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Improved localization with data augmentation
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Optimized inference pipeline (20% latency reduction)
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Automotive Inspection & Quality Assurance application
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Project 3: E-Commerce Product Recommendation Engine -->
-        <div class="work-card-large glass-card">
-          <div class="work-details">
-            <div class="hero-pill">
-              AI RECOMMENDATIONS & SEARCH
-            </div>
-            <h3>E-Commerce Product Recommendation Engine</h3>
-            <p>
-              Built an intelligent recommendation engine combining collaborative filtering, content-based filtering, and
-              hybrid recommendation approaches to dynamically personalize inventory suggestions.
-            </p>
-            <ul class="outcomes-list">
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                23% boost in recommendation accuracy metrics
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                15% increase in Click-Through Rates (CTR)
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Supports massive scaling for 10,000+ products
-              </li>
-              <li class="outcome-item">
-                <span class="outcome-check">✓</span>
-                Evaluated with strict Precision, Recall, & F1 metrics
-              </li>
-            </ul>
-          </div>
-
-          <!-- Flowchart vector visualisation -->
-          <div class="work-visuals-container">
-            <svg width="100%" height="80%" viewBox="0 0 250 180" style="display:block;">
-              <!-- Input profiles -->
-              <rect class="flow-node" x="10" y="30" width="50" height="24" rx="2" stroke="rgba(236, 72, 153, 0.3)"
-                fill="rgba(255, 255, 255, 0.5)" />
-              <text x="35" y="44" fill="var(--text-muted)" font-size="6.5" font-weight="600" text-anchor="middle"
-                font-family="var(--font-mono)">USER PROFILE</text>
-
-              <rect class="flow-node" x="10" y="110" width="50" height="24" rx="2" stroke="rgba(236, 72, 153, 0.3)"
-                fill="rgba(255, 255, 255, 0.5)" />
-              <text x="35" y="124" fill="var(--text-muted)" font-size="6.5" font-weight="600" text-anchor="middle"
-                font-family="var(--font-mono)">ITEM CORPUS</text>
-
-              <!-- Central matching engine -->
-              <polygon class="flow-node-active" points="110,60 150,80 110,100 70,80" stroke="var(--accent-pink-primary)"
-                stroke-width="1.5" fill="rgba(236, 72, 153, 0.08)" />
-              <text x="110" y="83" fill="var(--text-primary)" font-size="6.5" font-weight="700" text-anchor="middle"
-                font-family="var(--font-mono)">HYBRID ENGINE</text>
-
-              <!-- Output recommendation -->
-              <rect class="flow-node" x="185" y="70" width="55" height="24" rx="2" stroke="var(--accent-pink-berry)"
-                fill="rgba(236, 72, 153, 0.12)" />
-              <text x="212" y="84" fill="var(--accent-pink-berry)" font-size="6.5" font-weight="700"
-                text-anchor="middle" font-family="var(--font-mono)">RECOMMEND</text>
-
-              <!-- Links -->
-              <path class="flow-link" d="M 60,42 L 80,42 L 80,70 L 90,70" stroke="rgba(236, 72, 153, 0.3)"
-                fill="none" />
-              <path class="flow-link" d="M 60,122 L 80,122 L 80,90 L 90,90" stroke="rgba(236, 72, 153, 0.3)"
-                fill="none" />
-
-              <line class="flow-link-active" x1="150" y1="80" x2="185" y2="80" stroke="var(--accent-pink-fuchsia)"
-                stroke-width="1.5" />
-
-              <!-- Moving data dot particle effect mock -->
-              <circle cx="170" cy="80" r="2.5" fill="var(--accent-pink-berry)" />
-            </svg>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- --- RESEARCH & PUBLICATIONS --- -->
-  <section class="section fade-in-entry" id="research">
+  <!-- --- VIEW MY WORK / PRODUCT PORTFOLIO HUB --- -->
+  <section class="section" id="work">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">Academic & Research Works</div>
-        <h2 class="section-title">Peer-Reviewed Scientific Impact</h2>
-        <p class="section-subtitle">Combining deep scientific research methodology with production-grade engineering
-          structures.</p>
+        <div class="section-label">PRODUCT PORTFOLIO & WORK</div>
+        <h2 class="section-title">View My Work</h2>
+        <p class="section-subtitle">Structured product management case studies, AI lab experiments, analytics platforms,
+          and product thinking frameworks.</p>
       </div>
 
-      <div class="research-grid">
-        <!-- Award Card -->
-        <div class="research-card glass-card premium-glow">
+      <div class="card-grid">
+        <!-- 1. Case Studies -->
+        <a href="pages/case-studies.html" class="glass-card premium-glow">
           <div>
-            <div class="research-tag">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                </polygon>
-              </svg>
-              BEST PAPER AWARD
-            </div>
-            <h3 class="research-title">ICIRDST-2025 Recipient</h3>
-            <p class="research-desc" style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">
-              IoT-Enabled Deep Learning Framework for Real-Time Defect Detection in Industrial Quality Control
-            </p>
-            <p class="research-desc">
-              Awarded for developing an end-to-end framework combining internet-of-things architecture with optimized
-              deep convolutional neural network segmentations for inline inspection systems.
+            <div class="card-tag">TEARDOWNS</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Case Studies</h3>
+            <p class="card-desc">Deep-dive product management case studies and strategy teardowns for Groww and Spotify.
             </p>
           </div>
-          <a href="#work" class="research-link">
-            Explore System Details
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
+          <div class="card-footer">
+            <span class="card-tag">2 Case Studies</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
 
-        <!-- Publication Card -->
-        <div class="research-card glass-card">
+        <!-- 2. Product Portfolio (Projects) -->
+        <a href="pages/projects.html" class="glass-card premium-glow">
           <div>
-            <div class="research-tag journal">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-              </svg>
-              PEER-REVIEWED JOURNAL
-            </div>
-            <h3 class="research-title">Springer LNNS Publication</h3>
-            <p class="research-desc" style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">
-              Defect Detection System Using High-Resolution Cameras for Scratches/Dents
-            </p>
-            <p class="research-desc">
-              Formal peer-reviewed paper addressing advanced computer vision models for surface anomaly classification.
-              Published inside Springer LNNS as part of the ICAAAIML-2025 collection.
-            </p>
+            <div class="card-tag">PRODUCT PROJECTS</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Product Portfolio</h3>
+            <p class="card-desc">Problem-solving products including AI Product Copilot (Next.js & Gemini) and MiniCRM Platform (Next.js & Node.js & MongoDB).</p>
           </div>
-          <a href="#work" class="research-link">
-            Read Publication Abstract
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
+          <div class="card-footer">
+            <span class="card-tag">Full-Stack AI Projects</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
 
-        <!-- Research Impact Card -->
-        <div class="research-card glass-card">
+        <!-- 3. AI Lab -->
+        <a href="pages/ai-lab.html" class="glass-card">
           <div>
-            <div class="research-tag impact">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <line x1="18" y1="20" x2="18" y2="10"></line>
-                <line x1="12" y1="20" x2="12" y2="4"></line>
-                <line x1="6" y1="20" x2="6" y2="14"></line>
-              </svg>
-              RESEARCH VECTORS
-            </div>
-            <h3 class="research-title">Core Research Focus Areas</h3>
-            <p class="research-desc"
-              style="color: var(--text-primary); font-weight: 600; margin-bottom: 1rem; font-family: var(--font-display);">
-              Deep Learning & Computer Vision
-            </p>
-            <p class="research-desc">
-              Dedicated studies in convolutional methodologies, real-time object detection frameworks (YOLO),
-              high-resolution optical integrity algorithms, and industrial computer vision automation.
-            </p>
+            <div class="card-tag">GENAI & LLMS</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">AI Lab</h3>
+            <p class="card-desc">Prompt engineering, AI Agents, RAG architecture, LangChain, Mistral AI, ChromaDB,
+              Gemini, Claude, and mini-projects.</p>
           </div>
-          <a href="#work" class="research-link">
-            Inspect Accuracy Metrics
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
+          <div class="card-footer">
+            <span class="card-tag">10 Modules</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
+
+        <!-- 4. Analytics -->
+        <a href="pages/analytics.html" class="glass-card">
+          <div>
+            <div class="card-tag">DATA & BI</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Analytics</h3>
+            <p class="card-desc">SQL queries, Power BI dashboards, Python ETL pipelines, cohort retention heatmaps,
+              funnel conversions, and A/B testing.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">9 Modules</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
+
+        <!-- 7. Product Thinking -->
+        <a href="pages/product-thinking.html" class="glass-card premium-glow">
+          <div>
+            <div class="card-tag">STRATEGY & FRAMEWORKS</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Product Thinking</h3>
+            <p class="card-desc">Show how I think: Product breakdowns (ChatGPT, Cursor, Notion, Perplexity, Groww),
+              Feature Ideas, Decision Journal ⭐⭐⭐⭐⭐, and Framework Library (RICE, Kano, JTBD).</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">10 Frameworks</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
+
+        <!-- 8. Learning Journey -->
+        <a href="pages/learning.html" class="glass-card">
+          <div>
+            <div class="card-tag">LEARNING & CHALLENGES</div>
+            <h3 class="card-title" style="margin-top: 0.5rem;">Learning Journey</h3>
+            <p class="card-desc">Active skill-building tracks: 50-Day SQL Challenge, Python analytics, DSA problem-solving, and publishing product case studies on Medium.</p>
+          </div>
+          <div class="card-footer">
+            <span class="card-tag">Active Practice & Roadmap</span>
+            <span class="card-action">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg></span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- --- EXPERIENCE TIMELINE --- -->
-  <section class="section fade-in-entry" id="experience">
+  <!-- --- FEATURED PRODUCT PROJECTS (FROM RESUME) --- -->
+  <section class="section">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">Professional Milestones</div>
-        <h2 class="section-title">Timeline of Enterprise Output</h2>
-        <p class="section-subtitle">Driving metrics, automating pipelines, and managing strategy within agile commercial
-          structures.</p>
+        <div class="section-label">FEATURED HIGHLIGHTS</div>
+        <h2 class="section-title">Key Projects</h2>
+        <p class="section-subtitle">Real-world AI and product management systems engineered for quantifiable business
+          impact.</p>
       </div>
 
-      <div class="timeline-wrapper">
-        <div class="timeline-line"></div>
-
-        <!-- Timeline item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">
-            <span class="timeline-date">February 2026 – May 2026</span>
-            <span class="timeline-company">Vedantu Innovations Pvt. Ltd.</span>
-          </div>
-          <h3 class="timeline-title">Research & Strategy Intern</h3>
-          <ul class="timeline-highlights">
-            <li class="timeline-highlight">Developed a real-time automated YouTube analytics dashboard powered by
-              AI-generated insights.</li>
-            <li class="timeline-highlight">Reduced manual reporting effort by 60%.</li>
-            <li class="timeline-highlight">Designed interactive analytics dashboards using historical data from over 500
-              YouTube videos.</li>
-            <li class="timeline-highlight">Enabled faster trend identification and strategic decision-making.</li>
-            <li class="timeline-highlight">Integrated Google Sheets with YouTube Cloud APIs to automate KPI tracking and
-              reporting workflows.</li>
-            <li class="timeline-highlight">Improved reporting accuracy by 40%.</li>
-            <li class="timeline-highlight">Collaborated with research, analytics, and strategy teams to support
-              data-driven campaign planning and operational optimization.</li>
+      <div style="display: flex; flex-direction: column; gap: 2.5rem;">
+        <!-- Project 1: Fintech Retention Intelligence Platform -->
+        <div class="glass-card premium-glow" style="padding: 2.5rem;">
+          <div class="hero-pill">PRODUCT MANAGEMENT CASE STUDY • PRODUCT STRATEGY • USER RESEARCH</div>
+          <h3 style="font-size: 1.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem;">Fintech Retention Intelligence
+            Platform</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Assessed 4 leading fintech platforms (CRED, Paytm, PhonePe, Google Pay) through Market Research, Feature
+            Benchmarking, and Retention Analysis. Formulated <strong>Smart Financial Coach</strong> product concept,
+            defining Feature Scope, Info Architecture, Success Metrics, North Star Metric (MATU), and PRD.
+          </p>
+          <ul class="detail-list" style="margin-bottom: 0;">
+            <li class="detail-list-item"><span class="icon">✓</span> Qualitative User Research with 15+ users producing
+              User Personas & Customer Journey Maps.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Uncovered key friction points in spending
+              awareness, bill management, and user retention.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Stack: Figma, Notion, Product Analytics, PRD
+              Writing, Feature Prioritization, RICE.</li>
           </ul>
         </div>
 
-        <!-- Timeline item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-meta">
-            <span class="timeline-date">September 2025 – December 2025</span>
-            <span class="timeline-company">AlignBox</span>
-          </div>
-          <h3 class="timeline-title">Web Development Intern</h3>
-          <ul class="timeline-highlights">
-            <li class="timeline-highlight">Developed scalable and reusable user interface components to improve UI
-              consistency.</li>
-            <li class="timeline-highlight">Reduced UI development turnaround time by 25%.</li>
-            <li class="timeline-highlight">Built and integrated backend services and REST APIs, improving communication
-              efficiency by 35%.</li>
-            <li class="timeline-highlight">Optimized application architecture and database design, boosting system
-              performance by 30%.</li>
-            <li class="timeline-highlight">Collaborated closely with product and engineering teams in agile Scrum
-              environments.</li>
+        <!-- Project 2: Zomato Delivery Analytics -->
+        <div class="glass-card" style="padding: 2.5rem;">
+          <div class="hero-pill">PRODUCT ANALYTICS • POSTGRESQL WAREHOUSING • POWER BI</div>
+          <h3 style="font-size: 1.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem;">Zomato Delivery Analytics &
+            Intelligence Platform</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Built an end-to-end analytics platform by integrating 3+ real-world datasets, processing 100K+ transactional
+            records via automated Python ETL workflows, PostgreSQL warehousing, and scalable data modeling.
+          </p>
+          <ul class="detail-list" style="margin-bottom: 0;">
+            <li class="detail-list-item"><span class="icon">✓</span> Advanced SQL analytical models for cohort analysis,
+              churn prediction, delivery SLA tracking, & cancellation intelligence across 20+ KPIs.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Developed interactive Power BI dashboards & FastAPI
+              services, improving decision visibility by 45%.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Tech: Python, Pandas, PostgreSQL, SQL, Power BI,
+              FastAPI, REST APIs.</li>
+          </ul>
+        </div>
+
+        <!-- Project 3: AI Meeting Intelligence Assistant -->
+        <div class="glass-card" style="padding: 2.5rem;">
+          <div class="hero-pill">GENAI • RAG • AI PRODUCT • LLM</div>
+          <h3 style="font-size: 1.75rem; margin-top: 0.75rem; margin-bottom: 0.75rem;">AI Meeting Intelligence Assistant
+          </h3>
+          <p style="margin-bottom: 1.25rem;">
+            Built an AI-powered Meeting Intelligence platform that automated meeting transcription, summarization, and
+            knowledge retrieval, reducing time-to-insight by 80% while supporting 5+ media formats.
+          </p>
+          <ul class="detail-list" style="margin-bottom: 0;">
+            <li class="detail-list-item"><span class="icon">✓</span> RAG pipeline using Whisper, Mistral AI, and
+              ChromaDB delivering sub-second semantic search.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Streamlit app with automated action-item
+              extraction, boosting post-meeting efficiency by 40%.</li>
+            <li class="detail-list-item"><span class="icon">✓</span> Tech: Python, LangChain, Mistral AI, Whisper,
+              ChromaDB, RAG, LLMs.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- --- SKILLS SECTION --- -->
-  <section class="section fade-in-entry" id="skills">
+  <!-- --- EXPERIENCE SECTION --- -->
+  <section class="section" id="experience">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">Capabilities Matrix</div>
-        <h2 class="section-title">Technical Foundations</h2>
-        <p class="section-subtitle">Modern database languages, statistical methods, intelligence tools, and frameworks
-          structured by competency area.</p>
+        <div class="section-label">CAREER HISTORY</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Demonstrated impact across data-driven strategy and software development
+          internships.</p>
+      </div>
+
+      <div class="timeline-list">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card">
+            <div class="hero-pill">FEB 2026 – MAY 2026</div>
+            <h3 style="font-size: 1.35rem; margin-top: 0.5rem;">Research & Strategy Intern</h3>
+            <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">Vedantu
+              Innovations Pvt. Ltd.</h4>
+            <ul class="detail-list" style="margin-bottom: 0;">
+              <li class="detail-list-item"><span class="icon">✓</span> Developed AI-powered analytics dashboards
+                enabling product & strategy teams to make data-driven decisions, reducing manual reporting by 60%.</li>
+              <li class="detail-list-item"><span class="icon">✓</span> Designed interactive data visualization
+                dashboards using historical YouTube analytics data from 500+ videos.</li>
+              <li class="detail-list-item"><span class="icon">✓</span> Integrated Google Sheets with YouTube Cloud
+                Console APIs to automate KPI tracking workflows (40% accuracy improvement).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-card">
+            <div class="hero-pill">SEP 2025 – DEC 2025</div>
+            <h3 style="font-size: 1.35rem; margin-top: 0.5rem;">Web Developer Intern</h3>
+            <h4 style="color: var(--text-secondary); font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">AlignBox
+            </h4>
+            <ul class="detail-list" style="margin-bottom: 0;">
+              <li class="detail-list-item"><span class="icon">✓</span> Developed scalable frontend components using
+                React.js, HTML, CSS, JavaScript (25% dev time reduction).</li>
+              <li class="detail-list-item"><span class="icon">✓</span> Built backend services and REST APIs using
+                Node.js & Express.js (35% communication efficiency improvement).</li>
+              <li class="detail-list-item"><span class="icon">✓</span> Optimized database schema design & application
+                architecture for 30% performance boost.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- TECHNICAL FOUNDATIONS (SKILLS SECTION - 5 COMPETENCY COLUMNS) --- -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">CAPABILITIES MATRIX</div>
+        <h2 class="section-title">Technical & PM Foundations</h2>
+        <p class="section-subtitle">Modern product management frameworks, database languages, statistical methods,
+          intelligence tools, and technical architectures structured by competency area.</p>
       </div>
 
       <div class="skills-grid">
-        <!-- Category 1: Data Analytics -->
+        <!-- 1. Product Management -->
+        <div class="skills-category">
+          <h3>Product Management</h3>
+          <div class="skills-badges">
+            <span class="skill-badge">Product Strategy</span>
+            <span class="skill-badge">Product Positioning</span>
+            <span class="skill-badge">Product Analytics</span>
+            <span class="skill-badge">User Research</span>
+            <span class="skill-badge">Competitive Analysis</span>
+            <span class="skill-badge">Market Research</span>
+            <span class="skill-badge">Customer Journey Mapping</span>
+            <span class="skill-badge">PRD Writing</span>
+            <span class="skill-badge">Feature Prioritization (RICE/Kano)</span>
+            <span class="skill-badge">Roadmapping</span>
+            <span class="skill-badge">KPI Definition</span>
+            <span class="skill-badge">Go-to-Market (GTM)</span>
+            <span class="skill-badge">A/B Testing</span>
+            <span class="skill-badge">North Star Metric</span>
+            <span class="skill-badge">JTBD</span>
+          </div>
+        </div>
+
+        <!-- 2. Data Analytics -->
         <div class="skills-category">
           <h3>Data Analytics</h3>
           <div class="skills-badges">
@@ -871,7 +575,7 @@
           </div>
         </div>
 
-        <!-- Category 2: AI & ML -->
+        <!-- 3. AI & Machine Learning -->
         <div class="skills-category">
           <h3>AI & Machine Learning</h3>
           <div class="skills-badges">
@@ -888,7 +592,7 @@
           </div>
         </div>
 
-        <!-- Category 3: Programming -->
+        <!-- 4. Programming -->
         <div class="skills-category">
           <h3>Programming</h3>
           <div class="skills-badges">
@@ -902,7 +606,7 @@
           </div>
         </div>
 
-        <!-- Category 4: Tools & Platforms -->
+        <!-- 5. Tools & Platforms -->
         <div class="skills-category">
           <h3>Tools & Platforms</h3>
           <div class="skills-badges">
@@ -918,169 +622,81 @@
     </div>
   </section>
 
-  <!-- --- EDUCATION & CERTIFICATIONS SECTION --- -->
-  <section class="section fade-in-entry" id="education">
+
+  <!-- --- EDUCATION & CREDENTIALS SECTION --- -->
+  <section class="section" id="education">
     <div class="container">
       <div class="section-header">
-        <div class="section-label">Academic Foundations</div>
+        <div class="section-label">ACADEMIC FOUNDATIONS</div>
         <h2 class="section-title">Education & Credentials</h2>
         <p class="section-subtitle">Formal engineering training and professional industry certifications.</p>
       </div>
 
-      <!-- Education Cards Grid (3 Columns) -->
-      <div class="research-grid" style="margin-bottom: 5rem;">
-        <!-- Card 1: LPU -->
-        <div class="research-card glass-card">
+      <div class="education-grid">
+        <!-- Card 1 -->
+        <div class="glass-card education-card">
           <div>
-            <div class="research-tag">2022 — PRESENT</div>
-            <h3 class="research-title" style="font-size: 1.15rem; line-height: 1.3;">Lovely Professional University</h3>
-            <p class="research-desc"
-              style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; font-size: 0.95rem;">
-              Bachelor of Technology
-            </p>
-            <p class="research-desc"
-              style="color: var(--text-muted); font-weight: 500; margin-bottom: 1rem; font-size: 0.9rem;">
-              Computer Science and Engineering
-            </p>
-            <p class="research-desc" style="font-size: 0.85rem; line-height: 1.4;">
-              Currently pursuing engineering degree with deep focus on data structures, algorithms, machine learning,
-              and database systems.
-            </p>
+            <div class="hero-pill" style="margin-bottom: 0.75rem;">2022 – PRESENT</div>
+            <h3>Lovely Professional University</h3>
+            <h4>Bachelor of Technology</h4>
+            <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Computer Science and
+              Engineering</p>
+            <p>Currently pursuing engineering degree with deep focus on data structures, algorithms, machine learning,
+              and database systems.</p>
           </div>
-          <div
-            style="font-size: 0.75rem; color: var(--text-dim); margin-top: auto; display: flex; align-items: center; gap: 0.4rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.03); font-family: var(--font-mono);">
-            <span>📍 Jalandhar, Punjab, India</span>
-          </div>
+          <div class="education-location">📍 Jalandhar, Punjab, India</div>
         </div>
 
-        <!-- Card 2: XII -->
-        <div class="research-card glass-card">
+        <!-- Card 2 -->
+        <div class="glass-card education-card">
           <div>
-            <div class="research-tag">2019 — 2021</div>
-            <h3 class="research-title" style="font-size: 1.15rem; line-height: 1.3;">Career Point Gurukul School</h3>
-            <p class="research-desc"
-              style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; font-size: 0.95rem;">
-              Class XII (Science)
-            </p>
-            <p class="research-desc"
-              style="color: var(--text-secondary); font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">
-              Grade: 89.60%
-            </p>
-            <p class="research-desc" style="font-size: 0.85rem; line-height: 1.4;">
-              Completed senior secondary education focusing on physics, chemistry, mathematics, and computer science.
+            <div class="hero-pill" style="margin-bottom: 0.75rem;">2019 – 2021</div>
+            <h3>Career Point Gurukul School</h3>
+            <h4>Class XII (Science)</h4>
+            <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Grade: 89.60%</p>
+            <p>Completed senior secondary education focusing on physics, chemistry, mathematics, and computer science.
             </p>
           </div>
-          <div
-            style="font-size: 0.75rem; color: var(--text-dim); margin-top: auto; display: flex; align-items: center; gap: 0.4rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.03); font-family: var(--font-mono);">
-            <span>📍 Kota, Rajasthan, India</span>
-          </div>
+          <div class="education-location">📍 Kota, Rajasthan, India</div>
         </div>
 
-        <!-- Card 3: X -->
-        <div class="research-card glass-card">
+        <!-- Card 3 -->
+        <div class="glass-card education-card">
           <div>
-            <div class="research-tag">2017 — 2019</div>
-            <h3 class="research-title" style="font-size: 1.15rem; line-height: 1.3;">Christ Jyoti School</h3>
-            <p class="research-desc"
-              style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; font-size: 0.95rem;">
-              Class X
-            </p>
-            <p class="research-desc"
-              style="color: var(--text-secondary); font-weight: 600; margin-bottom: 1rem; font-size: 0.9rem;">
-              Grade: 92%
-            </p>
-            <p class="research-desc" style="font-size: 0.85rem; line-height: 1.4;">
-              Completed secondary high school matriculation with distinctions in science and mathematics.
-            </p>
+            <div class="hero-pill" style="margin-bottom: 0.75rem;">2017 – 2019</div>
+            <h3>Christ Jyoti School</h3>
+            <h4>Class X</h4>
+            <p style="font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem;">Grade: 92%</p>
+            <p>Completed secondary high school matriculation with distinctions in science and mathematics.</p>
           </div>
-          <div
-            style="font-size: 0.75rem; color: var(--text-dim); margin-top: auto; display: flex; align-items: center; gap: 0.4rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.03); font-family: var(--font-mono);">
-            <span>📍 Bengaluru, Karnataka, India</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certifications Subtitle -->
-      <div style="margin-bottom: 2rem;">
-        <h3
-          style="font-family: var(--font-display); font-size: 1.35rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem; letter-spacing: -0.02em;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-pink-primary)"
-            stroke-width="2">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-          </svg>
-          Professional Certifications
-        </h3>
-      </div>
-
-      <!-- Certifications Grid (2 Columns) -->
-      <div class="work-grid">
-        <!-- Cert 1 -->
-        <div class="glass-card" style="padding: 2rem; display: flex; align-items: flex-start; gap: 1.25rem;">
-          <div class="metric-icon"
-            style="flex-shrink: 0; background: rgba(236, 72, 153, 0.05); border-color: rgba(236, 72, 153, 0.2); color: var(--text-secondary); width: 36px; height: 36px; border-radius: 4px; margin-bottom: 0; display: flex; align-items: center; justify-content: center; font-size: 1rem;">
-            🏆
-          </div>
-          <div>
-            <h4
-              style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.25rem; font-family: var(--font-display); font-weight: 700;">
-              Supervised Machine Learning: Regression and Classification</h4>
-            <p
-              style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-mono);">
-              Stanford University Online • March 2025</p>
-            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Core curriculum in linear
-              regression, logistic regression, gradient descent algorithms, regularization, and classification models.
-            </p>
-          </div>
-        </div>
-
-        <!-- Cert 2 -->
-        <div class="glass-card" style="padding: 2rem; display: flex; align-items: flex-start; gap: 1.25rem;">
-          <div class="metric-icon"
-            style="flex-shrink: 0; background: rgba(236, 72, 153, 0.05); border-color: rgba(236, 72, 153, 0.2); color: var(--text-secondary); width: 36px; height: 36px; border-radius: 4px; margin-bottom: 0; display: flex; align-items: center; justify-content: center; font-size: 1rem;">
-            ☁️
-          </div>
-          <div>
-            <h4
-              style="font-size: 1.05rem; color: var(--text-primary); margin-bottom: 0.25rem; font-family: var(--font-display); font-weight: 700;">
-              Cloud Computing MOOC Certification</h4>
-            <p
-              style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-mono);">
-              NPTEL Swayam (IIT Kharagpur) • October 2024</p>
-            <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.5;">Comprehensive study of cloud
-              virtualization, distributed architectures, mapping frameworks, and resource scaling pipelines.</p>
-          </div>
+          <div class="education-location">📍 Bengaluru, Karnataka, India</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- --- PERSONAL PHILOSOPHY --- -->
-  <section class="section fade-in-entry" id="philosophy">
+  <!-- --- PHILOSOPHY CARD ("Building Systems That Create Clarity") --- -->
+  <section class="section">
     <div class="container">
       <div class="philosophy-card glass-card">
-        <div class="philosophy-icon">⚡</div>
+        <div style="font-size: 2.25rem; color: var(--accent-pink-primary); margin-bottom: 0.75rem;">⚡</div>
         <h3>Building Systems That Create Clarity</h3>
-        <p>
-          "I believe the best solutions emerge when data, research, and technology work together. Whether analyzing
+        <p>"I believe the best solutions emerge when data, research, and technology work together. Whether analyzing
           customer behavior, developing intelligent models, or uncovering hidden patterns, my goal is always the same:
-          Turn information into meaningful action."
-        </p>
+          Turn information into meaningful action."</p>
       </div>
     </div>
   </section>
 
-  <!-- --- CONTACT SECTION --- -->
-  <section class="section contact-section fade-in-entry" id="contact">
+  <!-- --- CONTACT SECTION ("Let's Build Something Meaningful") --- -->
+  <section class="section" id="contact">
     <div class="container">
-      <div class="contact-card glass-card premium-glow">
+      <div class="contact-card glass-card">
         <h2 class="contact-title">Let's Build Something Meaningful</h2>
-        <p class="contact-subtitle">
-          I am passionate about solving complex problems through data, analytics, and artificial intelligence. Open to
-          opportunities in:
-        </p>
+        <p class="contact-subtitle">I am passionate about solving complex problems through data, analytics, and
+          artificial intelligence. Open to opportunities in:</p>
 
-        <div class="contact-topics" style="margin-bottom: 2rem;">
+        <div class="contact-topics">
           <span class="contact-topic">Data Analytics</span>
           <span class="contact-topic">Product Analytics</span>
           <span class="contact-topic">Research & Strategy</span>
@@ -1089,360 +705,28 @@
           <span class="contact-topic">AI Engineering</span>
         </div>
 
-        <div
-          style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; justify-content: center; align-items: center;">
-          <div>📍 Bengaluru, Karnataka, India</div>
-        </div>
+        <div class="contact-location">📍 Bengaluru, Karnataka, India</div>
 
         <div class="contact-actions">
           <a href="mailto:namratapaul2602@gmail.com" class="btn btn-primary" id="contact-email-btn">
             Send an Email
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </a>
-          <a href="https://www.linkedin.com/in/namrata-paul-/" target="_blank" class="btn btn-secondary"
+          <a href="https://linkedin.com/in/namrata-paul-/" target="_blank" class="btn btn-secondary"
             id="contact-linkedin-btn">Connect on LinkedIn</a>
+          <a href="https://leetcode.com/u/namratapaul2602/" target="_blank" class="btn btn-secondary"
+            id="contact-leetcode-btn">LeetCode Profile</a>
+          <a href="https://medium.com/@namratapaul2602" target="_blank" class="btn btn-secondary"
+            id="contact-medium-btn">Medium Profile</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- --- FOOTER --- -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-copy">
-          &copy; <span id="year">2026</span> Namrata Paul. All rights reserved.
-        </div>
-        <div class="footer-links">
-          <a href="https://github.com/Namratapaul26" target="_blank" class="footer-link">GitHub</a>
-          <a href="https://www.linkedin.com/in/namrata-paul-/" target="_blank" class="footer-link">LinkedIn</a>
-          <a href="#hero" class="footer-link">Back to Top</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- --- LIGHTWEIGHT INTERACTIVE JAVASCRIPT --- -->
-  <script>
-    // Set dynamic current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Blurred sticky navbar styling on scroll
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Mobile navigation links drawer toggler
-    const mobileToggle = document.getElementById('mobile-menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-
-    mobileToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-
-    // Close mobile links on link clicks
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
-
-    // Glass Spotlight Glow Coordinates tracking
-    // Generates a beautiful radial lighting follow cursor inside cards
-    const cards = document.querySelectorAll('.glass-card');
-    cards.forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--x', `${x}px`);
-        card.style.setProperty('--y', `${y}px`);
-      });
-    });
-
-    // High-performance viewport entry animations intersection observer
-    const entryObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          entryObserver.unobserve(entry.target); // Unobserve to boost performance
-        }
-      });
-    }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
-
-    document.querySelectorAll('.fade-in-entry').forEach(el => {
-      entryObserver.observe(el);
-    });
-
-    // Custom Pink Trailing Cursor system
-    const cursorDot = document.getElementById('cursor-dot');
-    const cursorCircle = document.getElementById('cursor-circle');
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let circleX = 0;
-    let circleY = 0;
-
-    // Track mouse coordinates
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-
-      // Instantly position the solid pink center dot
-      cursorDot.style.left = mouseX + 'px';
-      cursorDot.style.top = mouseY + 'px';
-    });
-
-    // Animate the trailing circle with spring lag (using requestAnimationFrame)
-    function animateCursor() {
-      // Spring coefficient (lag trailing factor)
-      const spring = 0.16;
-
-      circleX += (mouseX - circleX) * spring;
-      circleY += (mouseY - circleY) * spring;
-
-      cursorCircle.style.left = circleX + 'px';
-      cursorCircle.style.top = circleY + 'px';
-
-      requestAnimationFrame(animateCursor);
-    }
-
-    // Start cursor loop
-    animateCursor();
-
-    // Cursor hover animations for interactive tactile feedback
-    const hoverables = document.querySelectorAll('a, button, .btn, [role="button"], .glass-card');
-    hoverables.forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursorCircle.classList.add('hover');
-        cursorDot.classList.add('hover');
-      });
-      el.addEventListener('mouseleave', () => {
-        cursorCircle.classList.remove('hover');
-        cursorDot.classList.remove('hover');
-      });
-    });
-
-    // Sakura falling petals 3D-simulated background canvas particle system
-    const canvas = document.getElementById('sakura-canvas');
-    const ctx = canvas.getContext('2d');
-
-    let width = canvas.width = window.innerWidth;
-    let height = canvas.height = window.innerHeight;
-
-    window.addEventListener('resize', () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
-
-    const petalCount = 45;
-    const petals = [];
-
-    // Sakura shades palette matching soft premium pink
-    const colors = [
-      'rgba(254, 205, 211, 0.75)',  // Soft rose quartz
-      'rgba(251, 182, 196, 0.78)',  // Sakura petal pink
-      'rgba(244, 114, 182, 0.68)',  // Blush fuchsia
-      'rgba(253, 164, 175, 0.72)',  // Soft pastel red-rose
-      'rgba(255, 241, 242, 0.88)'   // Translucent crystal pink-white
-    ];
-
-    // Simulates a breathtaking initial load horizontal wind gust sweep
-    let initialWind = 4.0;
-
-    class SakuraPetal {
-      constructor(isInitial = false) {
-        this.reset();
-        if (isInitial) {
-          // On start: drop them from a high altitude above the screen in a staggered cascade shower
-          this.y = -50 - Math.random() * height * 1.5;
-        } else {
-          this.y = -20;
-        }
-      }
-
-      reset() {
-        this.x = Math.random() * width;
-        this.y = -20;
-        this.w = 6 + Math.random() * 10;
-        this.h = 6 + Math.random() * 8;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-
-        this.rX = Math.random() * Math.PI;
-        this.rY = Math.random() * Math.PI;
-        this.rZ = Math.random() * Math.PI * 2;
-
-        this.vY = 0.5 + Math.random() * 1.1;
-        this.vX = -0.3 + Math.random() * 0.8;
-
-        this.vrX = 0.005 + Math.random() * 0.02;
-        this.vrY = 0.005 + Math.random() * 0.02;
-        this.vrZ = 0.002 + Math.random() * 0.01;
-
-        this.swayFreq = 0.002 + Math.random() * 0.005;
-        this.time = Math.random() * 100;
-      }
-
-      update() {
-        this.time += this.swayFreq;
-
-        // Physics logic: standard natural drift + initial breeze on load
-        const currentVY = this.vY;
-        const currentVX = this.vX + initialWind + Math.sin(this.time) * 0.22;
-
-        this.y += currentVY;
-        this.x += currentVX;
-
-        // Standard 3D tumbling
-        this.rX += this.vrX;
-        this.rY += this.vrY;
-        this.rZ += this.vrZ;
-
-        // Reset if off bottom or sides
-        if (this.y > height + 20 || this.x < -20 || this.x > width + 20) {
-          this.reset();
-        }
-      }
-
-      draw() {
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.rZ);
-
-        const scaleX = Math.sin(this.rX);
-        const scaleY = Math.cos(this.rY);
-        ctx.scale(scaleX, scaleY);
-
-        ctx.beginPath();
-        ctx.fillStyle = this.color;
-        ctx.moveTo(0, 0);
-        ctx.bezierCurveTo(-this.w / 2, -this.h / 2, -this.w, this.h / 3, 0, this.h);
-        ctx.bezierCurveTo(this.w, this.h / 3, this.w / 2, -this.h / 2, 0, 0);
-        ctx.fill();
-
-        ctx.restore();
-      }
-    }
-
-    // High-contrast mini-sakura petal trail particles dropped naturally by cursor moves
-    class CursorPetal {
-      constructor(x, y) {
-        this.x = x;
-        this.y = y;
-        this.w = 5 + Math.random() * 6;
-        this.h = 4 + Math.random() * 5;
-        this.color = colors[Math.floor(Math.random() * colors.length)];
-        this.opacity = 1.0;
-        this.decay = 0.012 + Math.random() * 0.018; // longer lifespan (~0.8s) so they fall further down
-
-        this.rX = Math.random() * Math.PI;
-        this.rY = Math.random() * Math.PI;
-        this.rZ = Math.random() * Math.PI * 2;
-
-        // Physics: natural downward fall + gentle sway
-        this.vY = 0.6 + Math.random() * 0.8;
-        this.vX = -0.25 + Math.random() * 0.5;
-
-        this.vrX = 0.01 + Math.random() * 0.02;
-        this.vrY = 0.01 + Math.random() * 0.02;
-        this.vrZ = 0.005 + Math.random() * 0.015;
-
-        this.swayFreq = 0.003 + Math.random() * 0.006;
-        this.time = Math.random() * 100;
-      }
-
-      update() {
-        this.time += this.swayFreq;
-
-        // Natural downward fall and organic leaf sway
-        this.y += this.vY;
-        this.x += this.vX + Math.sin(this.time) * 0.2;
-
-        this.opacity -= this.decay;
-        this.rX += this.vrX;
-        this.rY += this.vrY;
-        this.rZ += this.vrZ;
-      }
-
-      draw() {
-        if (this.opacity <= 0) return;
-        ctx.save();
-        ctx.translate(this.x, this.y);
-        ctx.rotate(this.rZ);
-        ctx.scale(Math.sin(this.rX), Math.cos(this.rY));
-
-        ctx.beginPath();
-        const rgbaVal = this.color.replace(/[\d\.]+\)$/, `${this.opacity * 0.85})`);
-        ctx.fillStyle = rgbaVal;
-
-        ctx.strokeStyle = `rgba(255, 255, 255, ${this.opacity * 0.9})`;
-        ctx.lineWidth = 0.6;
-
-        ctx.moveTo(0, 0);
-        ctx.bezierCurveTo(-this.w / 2, -this.h / 2, -this.w, this.h / 3, 0, this.h);
-        ctx.bezierCurveTo(this.w, this.h / 3, this.w / 2, -this.h / 2, 0, 0);
-        ctx.fill();
-        ctx.stroke();
-
-        ctx.restore();
-      }
-    }
-
-    const cursorPetals = [];
-
-    // Spawn natural dropping petals from cursor moves/hovers
-    window.addEventListener('mousemove', (e) => {
-      if (Math.random() < 0.22) {
-        cursorPetals.push(new CursorPetal(e.clientX, e.clientY));
-      }
-    });
-
-    // Populate standard background canvas particles (all set to drop from top on start)
-    for (let i = 0; i < petalCount; i++) {
-      petals.push(new SakuraPetal(true));
-    }
-
-    function renderSakura() {
-      ctx.clearRect(0, 0, width, height);
-
-      // Decay the horizontal entrance wind breeze
-      if (initialWind > 0) {
-        initialWind -= 0.025;
-      } else {
-        initialWind = 0;
-      }
-
-      // Draw and update standard background particles
-      for (let i = 0; i < petalCount; i++) {
-        petals[i].update();
-        petals[i].draw();
-      }
-
-      // Draw and update cursor trail particles
-      for (let i = cursorPetals.length - 1; i >= 0; i--) {
-        const cp = cursorPetals[i];
-        cp.update();
-        if (cp.opacity <= 0) {
-          cursorPetals.splice(i, 1);
-        } else {
-          cp.draw();
-        }
-      }
-
-      requestAnimationFrame(renderSakura);
-    }
-
-    renderSakura();
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

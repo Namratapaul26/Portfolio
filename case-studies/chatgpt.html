@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Case Study – Conversational AI & Web Search | Namrata Paul</title>
+  <meta name="description" content="Product Management Case Study on ChatGPT: Product breakdown of OpenAI ChatGPT, GPT-4o voice assistant features, custom GPTs marketplace, and search integration.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Custom Trailing Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,2 C11.5,4 9,5 7.5,7 C5,10 5,14.5 8.5,17.5 C11,19.5 12,21 12,21 C12,21 13,19.5 15.5,17.5 C19,14.5 19,10 16.5,7 C15,5 12.5,4 12,2 Z" fill="var(--accent-pink-primary)" stroke="#FFFFFF" stroke-width="1.25"/></svg></div>
+  <div class="custom-cursor-circle" id="cursor-circle"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><g transform="translate(20,20)"><path d="M0,0 C-3,-8 -5,-12 -5,-16 C-5,-19 -2,-21 0,-19 C2,-21 5,-19 5,-16 C5,-12 3,-8 0,0 Z" fill="rgba(236, 72, 153, 0.04)" stroke="rgba(236, 72, 153, 0.32)" stroke-width="1.25"/></g></svg></div>
+  <canvas id="sakura-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span>Namrata</span> Paul</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#work" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="../index.html#research" class="nav-link">Research</a></li>
+        <li><a href="../index.html#education" class="nav-link">Education</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme">
+            <span id="theme-toggle-icon">🌸</span> <span id="theme-toggle-text">Sakura</span>
+          </button>
+        </li>
+        <li><a href="../NamrataPaulCV.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">View Resume</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 8rem; padding-bottom: 5rem;">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> / <a href="../pages/case-studies.html">Case Studies</a> / <span>ChatGPT Teardown</span>
+    </div>
+
+    <!-- Main Header -->
+    <div class="section-header">
+      <div class="section-label">GENAI PRODUCT MANAGEMENT CASE STUDY</div>
+      <h1 class="section-title">ChatGPT – Conversational AI & Web Search</h1>
+      <p class="section-subtitle">Evaluating OpenAI's product strategy: GPT-4o multimodal integration, real-time web search citations, custom GPT store monetization, and user retention.</p>
+    </div>
+
+    <!-- Impact Stats Cards -->
+    <div class="hero-visuals" style="margin-bottom: 3rem;">
+      <div class="metric-card glass-card premium-glow">
+        <div class="metric-icon">🤖</div>
+        <div>
+          <div class="metric-number">200M+</div>
+          <div class="metric-label">Weekly Active Users</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">⚡</div>
+        <div>
+          <div class="metric-number">Sub-300ms</div>
+          <div class="metric-label">GPT-4o Voice Latency</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">💡</div>
+        <div>
+          <div class="metric-number">3M+</div>
+          <div class="metric-label">Custom GPTs Created</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">🎯</div>
+        <div>
+          <div class="metric-number">WAU</div>
+          <div class="metric-label">North Star: Weekly Active Power Users</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Box -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">1. Product Strategy & Breakdown</h2>
+      <p style="line-height: 1.7; margin-bottom: 1rem;">
+        ChatGPT transitioned from a simple text completion playground into an ecosystem platform. By combining real-time web browsing, Python code execution (Advanced Data Analysis), and custom GPTs, OpenAI built a defensible moat against legacy search engines.
+      </p>
+    </div>
+
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="../pages/case-studies.html" class="btn btn-primary">← Back to All Case Studies</a>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

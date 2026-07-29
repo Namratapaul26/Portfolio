@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groww Case Study – Increase New User Activation | Namrata Paul</title>
+  <meta name="description" content="Product Management Case Study on Groww: Streamlining digital KYC onboarding, driving first-trade conversion from 35% to 60%, and introducing an AI Onboarding Assistant.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <!-- Custom Trailing Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,2 C11.5,4 9,5 7.5,7 C5,10 5,14.5 8.5,17.5 C11,19.5 12,21 12,21 C12,21 13,19.5 15.5,17.5 C19,14.5 19,10 16.5,7 C15,5 12.5,4 12,2 Z" fill="var(--accent-pink-primary)" stroke="#FFFFFF" stroke-width="1.25"/></svg></div>
+  <div class="custom-cursor-circle" id="cursor-circle"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><g transform="translate(20,20)"><path d="M0,0 C-3,-8 -5,-12 -5,-16 C-5,-19 -2,-21 0,-19 C2,-21 5,-19 5,-16 C5,-12 3,-8 0,0 Z" fill="rgba(236, 72, 153, 0.04)" stroke="rgba(236, 72, 153, 0.32)" stroke-width="1.25"/></g></svg></div>
+  <canvas id="sakura-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span>Namrata</span> Paul</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#work" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="../index.html#research" class="nav-link">Research</a></li>
+        <li><a href="../index.html#education" class="nav-link">Education</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme">
+            <span id="theme-toggle-icon">🌸</span> <span id="theme-toggle-text">Sakura</span>
+          </button>
+        </li>
+        <li><a href="../NamrataPaulCV.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">View Resume</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 8rem; padding-bottom: 5rem;">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a> / <a href="../pages/case-studies.html">Case Studies</a> / <span>Groww Activation</span>
+    </div>
+
+    <!-- Main Header -->
+    <div class="section-header">
+      <div class="section-label">FINTECH PRODUCT MANAGEMENT CASE STUDY</div>
+      <h1 class="section-title">Groww – Increase New User Activation</h1>
+      <p class="section-subtitle">A comprehensive product strategy to eliminate mandatory KYC friction, boost first-trade conversion from 35% to 60%, and integrate an AI Onboarding Assistant ("Groww Guru").</p>
+    </div>
+
+    <!-- Impact Stats Cards -->
+    <div class="hero-visuals" style="margin-bottom: 3rem;">
+      <div class="metric-card glass-card premium-glow">
+        <div class="metric-icon">🚀</div>
+        <div>
+          <div class="metric-number">35% → 60%</div>
+          <div class="metric-label">Target KYC Completion Lift</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">📈</div>
+        <div>
+          <div class="metric-number">+450K</div>
+          <div class="metric-label">New Active Investors (Per 3M Signups)</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">🏆</div>
+        <div>
+          <div class="metric-number">26.6%</div>
+          <div class="metric-label">Groww Market Share (14.8M Active Users)</div>
+        </div>
+      </div>
+      <div class="metric-card glass-card">
+        <div class="metric-icon">🎯</div>
+        <div>
+          <div class="metric-number">MNAT</div>
+          <div class="metric-label">North Star: Monthly New Active Traders</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Executive Summary & Business Context -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">1. Executive Summary & Business Context</h2>
+      <p style="margin-bottom: 1.25rem; line-height: 1.7;">
+        <strong>The Activation Bottleneck:</strong> Only ~35% of new Groww users currently finish the mandatory digital KYC process (PAN, Aadhaar, bank verification, selfie e-sign) and make a first investment. This indicates a major onboarding bottleneck where ~65% of signed-up users churn before becoming active investors, undercutting growth and wasting marketing acquisition spend.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">📊 Market Growth</h4>
+          <p style="font-size: 0.9rem;">India's retail investor base is booming—Demat accounts grew from ~4 crore in 2020 to ~14 crore by 2024. Nearly 48% of retail market participants are under age 30, preferring fast, mobile-first digital experiences.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">🟢 Groww's Market Position</h4>
+          <p style="font-size: 0.9rem;">Groww is India's largest retail brokerage with 26.6% market share and ~14.8M active users by mid-2026. Having achieved ~3x revenue growth (FY23–FY25), closing onboarding gaps is critical to sustaining top-line expansion.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">⚔️ Competitive Landscape</h4>
+          <p style="font-size: 0.9rem;">Top rivals like Zerodha achieve 50–55% signup-to-first-trade conversion with 35-minute video KYC, whereas Groww averages ~35% conversion and ~45-minute KYC processing times.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Problem Statement & Opportunity Sizing -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">2. Problem Statement & Opportunity Sizing</h2>
+      <div style="margin-bottom: 1.5rem;">
+        <p style="margin-bottom: 1rem;">
+          <strong>Problem Statement:</strong> Groww’s onboarding funnel suffers significant drop-off: ~65% of sign-ups abandon the app during mandatory KYC or pre-trade hesitation. Financial terminology overload, lack of guidance, and PAN/document verification friction lead to high acquisition waste.
+        </p>
+        <p style="margin-bottom: 1rem;">
+          <strong>Opportunity Sizing:</strong> Improving conversion from 35% to 50% on 3 million annual new sign-ups yields <strong>~450,000 additional active investors</strong>. Given Groww's monetization model (broking and mutual fund fees), this translates directly into a multi-crore top-line revenue surge.
+        </p>
+      </div>
+
+      <!-- Competitor Benchmark Table -->
+      <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">Competitor Onboarding Benchmark</h3>
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-color); background: rgba(236,72,153,0.08);">
+              <th style="padding: 0.75rem;">Metric / Step</th>
+              <th style="padding: 0.75rem; color: var(--accent-pink-primary);">Groww (Current)</th>
+              <th style="padding: 0.75rem;">Zerodha</th>
+              <th style="padding: 0.75rem;">Angel One</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 600;">KYC Start Rate</td>
+              <td style="padding: 0.75rem;">~80%</td>
+              <td style="padding: 0.75rem;">~85%</td>
+              <td style="padding: 0.75rem;">~75%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 600;">KYC Completion Rate</td>
+              <td style="padding: 0.75rem;">~65%</td>
+              <td style="padding: 0.75rem;">~70%</td>
+              <td style="padding: 0.75rem;">~60%</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 600;">Signup-to-First-Trade Rate</td>
+              <td style="padding: 0.75rem; font-weight: 700; color: var(--accent-pink-berry);">~35%</td>
+              <td style="padding: 0.75rem; font-weight: 700; color: #10B981;">~55%</td>
+              <td style="padding: 0.75rem;">~50%</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; font-weight: 600;">Video KYC Avg Time</td>
+              <td style="padding: 0.75rem;">~45 Mins</td>
+              <td style="padding: 0.75rem; color: #10B981;">~35 Mins</td>
+              <td style="padding: 0.75rem;">~40 Mins</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 3: User Research & Target Personas -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">3. User Research Insights & Personas</h2>
+      <p style="margin-bottom: 1.25rem;">
+        Qualitative interviews with novice and hesitant investors revealed 4 primary friction points: <strong>Education & Confidence Gap</strong> ("How do I pick a stock?"), <strong>Complex Interface</strong> (overwhelming terms like F&O), <strong>KYC Frustration</strong> (PAN memory hurdles, selfie failures), and <strong>Financial Anxiety</strong>.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+        <!-- Persona 1 -->
+        <div class="glass-card" style="padding: 1.75rem;">
+          <div class="card-tag">PERSONA 1</div>
+          <h3 style="font-size: 1.2rem; margin-top: 0.5rem;">Rajat, 23</h3>
+          <h4 style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.75rem;">The Newbie Techie</h4>
+          <p style="font-size: 0.875rem;">Recent engineering graduate eager to learn investing. Values quick wins and visual progress indicators; finds dense financial forms daunting.</p>
+        </div>
+
+        <!-- Persona 2 -->
+        <div class="glass-card" style="padding: 1.75rem;">
+          <div class="card-tag">PERSONA 2</div>
+          <h3 style="font-size: 1.2rem; margin-top: 0.5rem;">Anita, 35</h3>
+          <h4 style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.75rem;">The Busy Professional</h4>
+          <p style="font-size: 0.875rem;">Works long corporate hours, seeking passive wealth creation. Wants concise video hand-holding and reassurance ("Invest from ₹100").</p>
+        </div>
+
+        <!-- Persona 3 -->
+        <div class="glass-card" style="padding: 1.75rem;">
+          <div class="card-tag">PERSONA 3</div>
+          <h3 style="font-size: 1.2rem; margin-top: 0.5rem;">Sunil, 50</h3>
+          <h4 style="color: var(--text-secondary); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.75rem;">The Cautious Starter</h4>
+          <p style="font-size: 0.875rem;">Small business owner with limited mobile app experience. Needs step-by-step clarity and instant in-app support chat to avoid mistakes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Jobs-To-Be-Done (JTBD) & Customer Journey Map -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">4. Jobs-To-Be-Done (JTBD) & Journey Map</h2>
+      <ul class="detail-list" style="margin-bottom: 2rem;">
+        <li class="detail-list-item"><span class="icon">🎯</span> <strong>JTBD 1:</strong> "When I sign up for Groww, I want to complete my KYC in one sitting so that I can start investing immediately."</li>
+        <li class="detail-list-item"><span class="icon">🎯</span> <strong>JTBD 2:</strong> "When I'm about to make my first trade, I want to understand the basics so that I feel confident the investment is sound."</li>
+        <li class="detail-list-item"><span class="icon">🎯</span> <strong>JTBD 3:</strong> "If I get stuck during onboarding, I want an instant assistant so that I don't abandon the app."</li>
+      </ul>
+
+      <h3 style="font-size: 1.15rem; margin-bottom: 1rem; color: var(--text-primary);">7-Stage Customer Journey Map</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 1</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">Awareness</h4><p style="font-size: 0.8rem;">Peer ads & trust signals.</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 2</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">Signup</h4><p style="font-size: 0.8rem;">Phone + OTP (zero clutter).</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 3</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">KYC Wizard</h4><p style="font-size: 0.8rem;">PAN, Aadhaar, Selfie, e-Sign.</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 4</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">Account Setup</h4><p style="font-size: 0.8rem;">Bank linking & verification.</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 5</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">Education</h4><p style="font-size: 0.8rem;">Curated starter packs.</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 6</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">First Trade</h4><p style="font-size: 0.8rem;">1-Click buy execution.</p></div>
+        <div class="glass-card" style="padding: 1rem;"><div class="card-tag">STAGE 7</div><h4 style="font-size: 0.95rem; margin-top: 0.35rem;">Nurture</h4><p style="font-size: 0.8rem;">Habit-forming notifications.</p></div>
+      </div>
+    </div>
+
+    <!-- Section 5: Feature Prioritization (RICE Framework) -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">5. Feature Prioritization (RICE Framework)</h2>
+      <p style="margin-bottom: 1.25rem;">Using RICE scoring (Reach, Impact, Confidence, Effort), initiatives were prioritized to maximize immediate activation impact:</p>
+      
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.875rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--border-color); background: rgba(236,72,153,0.08);">
+              <th style="padding: 0.75rem;">Feature Initiative</th>
+              <th style="padding: 0.75rem;">Description</th>
+              <th style="padding: 0.75rem;">Impact</th>
+              <th style="padding: 0.75rem;">Priority</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 700;">Streamlined KYC Wizard</td>
+              <td style="padding: 0.75rem;">Progress bar, smart sequencing (PAN first, signature last), auto-fill hints.</td>
+              <td style="padding: 0.75rem; color: #10B981; font-weight: 700;">Very High</td>
+              <td style="padding: 0.75rem;"><span class="card-tag">P0 - Essential</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 700;">AI Onboarding Assistant ("Groww Guru")</td>
+              <td style="padding: 0.75rem;">Conversational GenAI bot to answer KYC questions, explain terms, & guide steps.</td>
+              <td style="padding: 0.75rem; color: #10B981; font-weight: 700;">High</td>
+              <td style="padding: 0.75rem;"><span class="card-tag">P0 - Essential</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 700;">Guided Education Modules</td>
+              <td style="padding: 0.75rem;">Curated "Top 10 Stocks for Beginners" & short video tutorials.</td>
+              <td style="padding: 0.75rem; color: var(--accent-pink-primary);">Med-High</td>
+              <td style="padding: 0.75rem;"><span class="card-tag">P1 - High</span></td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-color);">
+              <td style="padding: 0.75rem; font-weight: 700;">First-Trade Incentives</td>
+              <td style="padding: 0.75rem;">Instant ₹100 deposit reward & starter simulated portfolios.</td>
+              <td style="padding: 0.75rem;">Medium</td>
+              <td style="padding: 0.75rem;"><span class="card-tag">P1 - High</span></td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; font-weight: 700;">Simplified UI / Info Hiding</td>
+              <td style="padding: 0.75rem;">Hiding complex F&O and derivatives until post-first trade.</td>
+              <td style="padding: 0.75rem;">Medium</td>
+              <td style="padding: 0.75rem;"><span class="card-tag">P2 - Secondary</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Section 6: Product Requirements Document (PRD) & User Stories -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">6. Product Requirements Document (PRD) & User Stories</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">📱 Registration & KYC Module</h4>
+          <p style="font-size: 0.875rem;">Phone/OTP login, visual "Step 2 of 5" progress indicator, inline tooltips ("What is PAN?"), auto-fill via DigiLocker APIs, fallback manual upload path.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">🤖 AI Assistant ("Groww Guru")</h4>
+          <p style="font-size: 0.875rem;">Overlay chat bubble active across onboarding screens. Responds to FAQs ("forgot PAN", "how to link bank") and escalates to support seamlessly.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.5rem;">
+          <h4 style="color: var(--accent-pink-primary); margin-bottom: 0.5rem;">💡 Post-KYC Trading Landing</h4>
+          <p style="font-size: 0.875rem;">Displays "Congratulations, you're verified!" followed by 1-click starter mutual fund packs and a direct "Fund Your Account" button.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary);">User Stories</h3>
+      <ul class="detail-list">
+        <li class="detail-list-item"><span class="icon">✓</span> <em>As a new user,</em> I want a progress bar during KYC so that I know how many steps remain.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <em>As a beginner investor,</em> I want contextual tips like "What is PAN?" so I can complete forms without confusion.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <em>As a hesitant user,</em> I want to ask an in-app AI assistant questions ("How do I link bank?") and get instant help so I don't drop off.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <em>As a prospective trader,</em> I want curated starter portfolios so I feel confident executing my first investment.</li>
+      </ul>
+    </div>
+
+    <!-- Section 7: Technical & AI Architecture -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">7. Technical & AI System Architecture</h2>
+      <div style="margin-bottom: 1.5rem;">
+        <p style="margin-bottom: 1rem;">
+          The system leverages a modern microservice stack with a Retrieval-Augmented Generation (RAG) AI pipeline:
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+        <div class="glass-card" style="padding: 1.25rem;">
+          <div class="card-tag">FRONTEND</div>
+          <h4 style="font-size: 1rem; margin-top: 0.4rem;">React Native Mobile App</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">iOS and Android native cross-platform build with smooth animations & sub-2s screen loads.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.25rem;">
+          <div class="card-tag">BACKEND</div>
+          <h4 style="font-size: 1rem; margin-top: 0.4rem;">Node.js / Express Microservices</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">KYC processing, document uploads, DigiLocker & vendor OCR liveness SDK integration.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.25rem;">
+          <div class="card-tag">AI / RAG PIPELINE</div>
+          <h4 style="font-size: 1rem; margin-top: 0.4rem;">Python + GPT-4 + RAG</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">OpenAI LLM fine-tuned on Groww help docs with vector search (ChromaDB) for sub-second answers.</p>
+        </div>
+        <div class="glass-card" style="padding: 1.25rem;">
+          <div class="card-tag">INFRASTRUCTURE</div>
+          <h4 style="font-size: 1rem; margin-top: 0.4rem;">AWS EC2 + S3 + PostgreSQL</h4>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Auto-scaling EC2, S3 document storage, PostgreSQL relational data, InfluxDB event logging.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8: Product Roadmap & Expected Impact -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">8. Roadmap & Expected Business Impact</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+        <div class="glass-card" style="padding: 1.25rem;"><div class="card-tag">Q1</div><h4 style="margin-top: 0.35rem;">MVP KYC Flow</h4><p style="font-size: 0.8rem;">Build progress bar, auto-fill, & basic AI bot.</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><div class="card-tag">Q2</div><h4 style="margin-top: 0.35rem;">A/B Testing</h4><p style="font-size: 0.8rem;">Launch streamlined flow A/B test & starter packs.</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><div class="card-tag">Q3</div><h4 style="margin-top: 0.35rem;">Scale AI</h4><p style="font-size: 0.8rem;">Multi-turn dialogue & rollout redesign to 100% users.</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><div class="card-tag">Q4</div><h4 style="margin-top: 0.35rem;">Global Launch</h4><p style="font-size: 0.8rem;">Gamification, social proof, & SIP onboarding.</p></div>
+      </div>
+
+      <div class="glass-card premium-glow" style="padding: 2rem;">
+        <h3 style="font-size: 1.35rem; color: var(--text-primary); margin-bottom: 0.75rem;">Impact Summary</h3>
+        <ul class="detail-list" style="margin-bottom: 0;">
+          <li class="detail-list-item"><span class="icon">📈</span> <strong>Higher Activation:</strong> 20–30% relative increase in KYC completion (from 35% to ~50–60%).</li>
+          <li class="detail-list-item"><span class="icon">💰</span> <strong>Revenue Growth:</strong> Adds 10–20% top-line revenue through expanded brokerage & mutual fund transaction volume.</li>
+          <li class="detail-list-item"><span class="icon">🛡️</span> <strong>Lower CAC & Churn:</strong> Enhanced first-week retention improves LTV-to-CAC ratio significantly.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Back to Case Studies CTA -->
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="../pages/case-studies.html" class="btn btn-primary">
+        ← Back to All Case Studies
+      </a>
+    </div>
+
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

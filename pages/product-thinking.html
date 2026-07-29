@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Thinking | Namrata Paul - AI Product Manager</title>
+  <meta name="description" content="Product Thinking Frameworks, Product Breakdowns, Feature Ideas, Reverse Engineering, Decision Journal, and Framework Library by Namrata Paul.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="custom-cursor-dot" id="cursor-dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12,2 C11.5,4 9,5 7.5,7 C5,10 5,14.5 8.5,17.5 C11,19.5 12,21 12,21 C12,21 13,19.5 15.5,17.5 C19,14.5 19,10 16.5,7 C15,5 12.5,4 12,2 Z" fill="var(--accent-pink-primary)" stroke="#FFFFFF" stroke-width="1.25"/></svg></div>
+  <div class="custom-cursor-circle" id="cursor-circle"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><g transform="translate(20,20)"><path d="M0,0 C-3,-8 -5,-12 -5,-16 C-5,-19 -2,-21 0,-19 C2,-21 5,-19 5,-16 C5,-12 3,-8 0,0 Z" fill="rgba(236, 72, 153, 0.04)" stroke="rgba(236, 72, 153, 0.32)" stroke-width="1.25"/></g></svg></div>
+  <canvas id="sakura-canvas"></canvas>
+
+  <!-- --- TOP NAVIGATION BAR --- -->
+      <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand"><span>Namrata</span> Paul</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#about" class="nav-link">About</a></li>
+        <li><a href="../index.html#work" class="nav-link">Projects</a></li>
+        <li><a href="../index.html#experience" class="nav-link">Experience</a></li>
+        <li><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="../index.html#research" class="nav-link">Research</a></li>
+        <li><a href="../index.html#education" class="nav-link">Education</a></li>
+        <li>
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Color Theme">
+            <span id="theme-toggle-icon">🌸</span> <span id="theme-toggle-text">Sakura</span>
+          </button>
+        </li>
+        <li><a href="../NamrataPaulCV.pdf" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">View Resume</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 8rem; padding-bottom: 5rem;">
+    <div class="breadcrumb"><a href="../index.html">Home</a> / <span>Product Thinking</span></div>
+
+    <div class="section-header">
+      <div class="section-label">HOW I THINK</div>
+      <h1 class="section-title">Product Thinking</h1>
+      <p class="section-subtitle">Structured product breakdowns, feature ideas, reverse engineering teardowns, decision journals, and custom framework libraries.</p>
+    </div>
+
+    <!-- 1. Product Breakdowns -->
+    <div class="detail-content-box" style="margin-bottom: 2.5rem;">
+      <h2 class="detail-section-heading">1. Product Breakdowns</h2>
+      <p style="margin-bottom: 1.25rem;">Deep-dive product teardowns evaluating user onboarding, value realization, retention hooks, and monetizable feature surfaces.</p>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem;">
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">ChatGPT</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Conversational UX & memory retention</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Cursor</h4><p style="font-size: 0.85rem; color: var(--text-muted);">AI developer workflow & codebase indexing</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Notion</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Modular building blocks & PLG expansion</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Perplexity</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Search answer engine & citation trust UX</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Groww</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Fintech onboarding & investment simplicity</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">CRED</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Gamification, credit score, and rewards</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Cashfree</h4><p style="font-size: 0.85rem; color: var(--text-muted);">B2B payment gateway API & checkout SLA</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Zepto</h4><p style="font-size: 0.85rem; color: var(--text-muted);">10-minute quick commerce dark store logistics</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Spotify</h4><p style="font-size: 0.85rem; color: var(--text-muted);">AI DJ & algorithmic playlist retention</p></div>
+      </div>
+    </div>
+
+    <!-- 2. Feature Ideas -->
+    <div class="detail-content-box" style="margin-bottom: 2.5rem;">
+      <h2 class="detail-section-heading">2. Feature Ideas</h2>
+      <p style="margin-bottom: 1rem;">Innovative product enhancement concepts addressing high-leverage user friction points.</p>
+      <div class="glass-card premium-glow" style="padding: 1.5rem;">
+        <div class="card-tag">FEATURE CONCEPT</div>
+        <h3 style="font-size: 1.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">10 AI Features for Google Maps</h3>
+        <p style="font-size: 0.95rem; color: var(--text-muted);">AI-powered personalized trip itinerary planner, real-time parking spot prediction, acoustic traffic rerouting, and conversational local business search.</p>
+      </div>
+    </div>
+
+    <!-- 3. Reverse Engineering -->
+    <div class="detail-content-box" style="margin-bottom: 2.5rem;">
+      <h2 class="detail-section-heading">3. Reverse Engineering</h2>
+      <p style="margin-bottom: 1rem;">Deconstructing key product mechanics across top consumer and enterprise software:</p>
+      <ul class="detail-list">
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Onboarding:</strong> Frictionless signups, progressive profiling, and time-to-value (TTV).</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Pricing:</strong> Freemium thresholds, seat-based vs usage-based billing models.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Retention:</strong> Habit loops, notification triggers, and data lock-in flywheels.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Notifications:</strong> Personalization timing, channel choice (Push vs Email vs SMS), and fatigue rules.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Search:</strong> Keyword relevance, vector semantic search, and auto-complete ranking algorithms.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Product Critiques -->
+    <div class="detail-content-box" style="margin-bottom: 2.5rem;">
+      <h2 class="detail-section-heading">4. Product Critiques</h2>
+      <p style="margin-bottom: 1rem;">Objective product evaluations identifying strengths, weaknesses, and optimization opportunities:</p>
+      <ul class="detail-list">
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>What Works:</strong> Core value proposition execution and user delights.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>What Doesn't:</strong> UX friction, cognitive load, and edge-case drop-offs.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Metrics:</strong> Telemetry indicators (DAU/MAU, CSAT, NPS, conversion rate).</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Trade-offs:</strong> Performance vs features, simplicity vs power user flexibility.</li>
+        <li class="detail-list-item"><span class="icon">✓</span> <strong>Suggested Experiments:</strong> Formulated A/B tests to validate potential solutions.</li>
+      </ul>
+    </div>
+
+    <!-- 5. Decision Journal ⭐⭐⭐⭐⭐ -->
+    <div class="detail-content-box" style="margin-bottom: 2.5rem;">
+      <h2 class="detail-section-heading">5. Decision Journal ⭐⭐⭐⭐⭐</h2>
+      <p style="margin-bottom: 1rem;">Documented trade-off reasoning behind major product and technical architectural decisions:</p>
+      <div class="glass-card premium-glow" style="padding: 1.75rem;">
+        <div class="card-tag">DECISION FRAMEWORK</div>
+        <h3 style="font-size: 1.25rem; margin-top: 0.5rem; margin-bottom: 0.75rem;">RAG Architecture vs Fine-Tuning Decision</h3>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;"><strong>Context:</strong> Deciding how to ground AI Meeting Assistant on domain transcripts with low latency and zero hallucinations.</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;"><strong>Options Evaluated:</strong> (A) Fine-tuning LLaMA 3, (B) RAG pipeline with ChromaDB vector search + Mistral AI.</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;"><strong>Trade-offs:</strong> Fine-tuning incurs high retraining costs for changing data; RAG provides instant document updates and exact citation provenance.</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.75rem;"><strong>Final Decision:</strong> Implemented RAG pipeline with Whisper + ChromaDB + Mistral AI.</p>
+        <p style="font-size: 0.95rem; margin-bottom: 0.5rem;"><strong>Expected Impact & Reflection:</strong> Sub-second response time and 80% reduction in reporting effort achieved.</p>
+      </div>
+    </div>
+
+    <!-- 6. Framework Library -->
+    <div class="detail-content-box">
+      <h2 class="detail-section-heading">6. Framework Library</h2>
+      <p style="margin-bottom: 1.25rem;">Custom implementations and reference templates for industry-standard PM frameworks:</p>
+      <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;">
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">RICE</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Reach * Impact * Confidence / Effort</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">Kano Model</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Must-haves, Performance, & Delighters</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">ICE</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Impact * Confidence * Ease</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">HEART</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Happiness, Engagement, Adoption, Retention, Task Success</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">AARRR</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Acquisition, Activation, Retention, Referral, Revenue</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">JTBD</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Jobs-To-Be-Done user motivation statements</p></div>
+        <div class="glass-card" style="padding: 1.25rem;"><h4 style="color: var(--text-primary);">North Star</h4><p style="font-size: 0.85rem; color: var(--text-muted);">Primary growth metric tree (MATU)</p></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
